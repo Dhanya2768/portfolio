@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560">
+  <defs>
+    <linearGradient id="talentoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09201a"/>
+      <stop offset="50%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="talentoAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#6ee7b7"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" fill="url(#talentoBg)"/>
+  
+  <!-- Outer border -->
+  <rect x="24" y="24" width="752" height="512" rx="16" fill="none" stroke="url(#emeraldGrad)" stroke-width="2" opacity="0.7"/>
+  <!-- Inner border -->
+  <rect x="36" y="36" width="728" height="488" rx="12" fill="none" stroke="#1e293b" stroke-width="1"/>
+  
+  <!-- Corner Ornaments -->
+  <g stroke="url(#emeraldGrad)" stroke-width="2" fill="none">
+    <path d="M48 64 L48 48 L64 48"/>
+    <path d="M752 64 L752 48 L736 48"/>
+    <path d="M48 496 L48 512 L64 512"/>
+    <path d="M752 496 L752 512 L736 512"/>
+  </g>
+
+  <!-- Organization Badge / Header -->
+  <rect x="300" y="58" width="200" height="34" rx="17" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+  <text x="400" y="80" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#a7f3d0" letter-spacing="3">ENBRIDGE</text>
+
+  <!-- Certificate Heading -->
+  <text x="400" y="145" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="28" font-weight="700" fill="#f8fafc" letter-spacing="1">CERTIFICATE OF PARTICIPATION</text>
+  <line x1="280" y1="165" x2="520" y2="165" stroke="url(#talentoAccent)" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="400" y="200" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" fill="#94a3b8">This certificate is proudly awarded to</text>
+  
+  <!-- Recipient Name -->
+  <text x="400" y="248" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="34" font-weight="700" fill="#6ee7b7" letter-spacing="0.5">DHANYA BIJU</text>
+  <line x1="260" y1="265" x2="540" y2="265" stroke="#064e3b" stroke-width="1"/>
+
+  <!-- Description -->
+  <text x="400" y="305" text-anchor="middle" font-family="'Inter', sans-serif" font-size="15" fill="#cbd5e1">in recognition of active participation and successful completion of</text>
+  <text x="400" y="345" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="24" font-weight="700" fill="#34d399">TALENTO PROGRAM 2024</text>
+  <text x="400" y="380" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" fill="#94a3b8">Career Development, Professional Practices &amp; Industry Exposure</text>
+
+  <!-- Stamp / Seal Icon -->
+  <g transform="translate(400, 445)">
+    <circle r="36" fill="#064e3b" stroke="url(#emeraldGrad)" stroke-width="2"/>
+    <circle r="30" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="4,2"/>
+    <text y="5" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#a7f3d0" letter-spacing="1">ENBRIDGE</text>
+  </g>
+
+  <!-- Footer Signatures & Date -->
+  <text x="140" y="460" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Enbridge Talent Team</text>
+  <line x1="80" y1="440" x2="200" y2="440" stroke="#059669" stroke-width="1"/>
+  <text x="140" y="478" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Workshop Division</text>
+
+  <text x="660" y="460" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Year: 2024</text>
+  <line x1="600" y1="440" x2="720" y2="440" stroke="#059669" stroke-width="1"/>
+  <text x="660" y="478" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">TALENTO Edition</text>
+</svg>
+

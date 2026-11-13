@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhanya Biju | MCA Student &amp; Aspiring Software Developer</title>
     <meta name="description"
-        content="Portfolio of Dhanya Biju — MCA Student and Aspiring Software Developer skilled in Java, Python, PHP, Laravel, Django, MySQL, and rule-based AI web applications.">
-    <meta property="og:title" content="Dhanya Biju | Portfolio">
+        content="Professional portfolio of Dhanya Biju — MCA Student and Aspiring Software Developer skilled in Java, Python, PHP, Laravel, Django, MySQL, and database-driven web applications.">
+    <meta property="og:title" content="Dhanya Biju | Professional Portfolio">
     <meta property="og:description"
-        content="MCA Student and Aspiring Software Developer building clean, database-driven web applications.">
+        content="MCA Student and Aspiring Software Developer building clean, database-driven web applications with rule-based AI features.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="dhanya.org">
     <meta property="og:image" content="Assets/image/image.jpeg">
@@ -21,6 +21,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="Assets/css/common.css">
     <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/about.css">
+    <link rel="stylesheet" href="Assets/css/education.css">
+    <link rel="stylesheet" href="Assets/css/certifications.css">
+    <link rel="stylesheet" href="Assets/css/skill.css">
+    <link rel="stylesheet" href="Assets/css/project.css">
+    <link rel="stylesheet" href="Assets/css/contact.css">
     <script>
         (function () {
             var theme = localStorage.getItem('portfolio-theme');
@@ -33,11 +39,12 @@
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#home" class="skip-link">Skip to main content</a>
 
+    <!-- Sticky Navigation Bar -->
     <header class="navbar">
         <div class="nav-inner">
-            <a href="index.html" class="logo" aria-label="dhanya.org home">
+            <a href="#home" class="logo" aria-label="dhanya.org home">
                 <img src="Assets/image/logo.svg" alt="dhanya.org logo" class="logo-icon" width="34" height="34">
                 <span class="logo-text">dhanya<span>.org</span></span>
             </a>
@@ -72,13 +79,13 @@
 
                 <nav aria-label="Primary Navigation">
                     <ul id="navMenu" class="nav-links">
-                        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li><a href="certifications.html">Certifications</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
                                 class="nav-btn">Download CV</a></li>
                     </ul>
@@ -88,7 +95,10 @@
     </header>
 
     <main id="main-content">
-        <section class="page-section" aria-labelledby="hero-heading">
+        <!-- =========================================
+             1. HERO SECTION
+             ========================================= -->
+        <section id="home" class="page-section page-section--hero" aria-labelledby="hero-heading">
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-content">
@@ -105,7 +115,8 @@
                         </p>
 
                         <div class="hero-actions">
-                            <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+                            <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                            <a href="#contact" class="btn btn-outline">Get In Touch</a>
                             <a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
                                 class="btn btn-outline">Download CV</a>
                         </div>
@@ -142,14 +153,860 @@
                 </div>
             </div>
         </section>
+
+        <!-- =========================================
+             2. ABOUT SECTION
+             ========================================= -->
+        <section id="about" class="page-section" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <span class="page-eyebrow">Profile</span>
+                        <h2 id="about-heading" class="page-title">About Me</h2>
+                    </div>
+                    <p class="page-subtitle">MCA student focused on clean backend systems, database design, and
+                        practical web software.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left Column: Bio + Highlights -->
+                    <article class="card about-card">
+                        <div class="about-bio">
+                            <h2>Building Practical, Database-Driven Web Applications</h2>
+                            <p>
+                                I am <strong>Dhanya Biju</strong>, an MCA student graduating in 2027 at
+                                <strong>Santhigiri College of Computer Sciences, Vazhithala</strong>, with a BCA degree
+                                from <strong>Mar Augusthinose College, Ramapuram</strong>.
+                            </p>
+                            <p>
+                                My development interests center on software development, problem solving, and web
+                                technologies—building structured backends, relational database models, and practical
+                                rule-based AI features while continuously learning modern industry practices.
+                            </p>
+                        </div>
+
+                        <div class="highlights-strip" aria-label="Key expertise highlights">
+                            <div class="highlight-box">
+                                <span class="highlight-label">Web Systems</span>
+                                <span class="highlight-value">Database-Driven Apps</span>
+                            </div>
+                            <div class="highlight-box">
+                                <span class="highlight-label">Smart Logic</span>
+                                <span class="highlight-value">Rule-Based AI Features</span>
+                            </div>
+                            <div class="highlight-box">
+                                <span class="highlight-label">CS Core</span>
+                                <span class="highlight-value">OOP, DBMS &amp; DSA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Right Column: Technical Expertise List -->
+                    <aside class="card about-side">
+                        <h2>Technical Expertise</h2>
+                        <ul class="expertise-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Python, Java, C &amp; C++</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>PHP, Laravel &amp; Django</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>MySQL &amp; Relational DBMS</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>HTML5, CSS3, JavaScript &amp; Bootstrap</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>AI/ML Fundamentals, Git &amp; GitHub</span>
+                            </li>
+                        </ul>
+                        <p class="interests-note">
+                            <strong>Location:</strong> Uzhavoor, Kottayam, Kerala
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             3. EDUCATION SECTION
+             ========================================= -->
+        <section id="education" class="page-section" aria-labelledby="education-heading">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <span class="page-eyebrow">Qualifications</span>
+                        <h2 id="education-heading" class="page-title">Academic Timeline</h2>
+                    </div>
+                    <p class="page-subtitle">My formal academic journey from school through postgraduate studies.</p>
+                </div>
+
+                <div class="education-layout">
+                    <div class="timeline-panel">
+                        <div class="timeline">
+                            <!-- MCA -->
+                            <article class="timeline-item">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="card timeline-card">
+                                    <button type="button" class="timeline-photo-btn"
+                                        data-photo-src="Assets/image/college-santhigiri.jpg"
+                                        data-photo-title="Santhigiri College of Computer Sciences"
+                                        data-photo-caption="Master of Computer Applications (MCA) — Vazhithala, Idukki, Kerala"
+                                        data-photo-alt="Santhigiri College of Computer Sciences campus, Vazhithala"
+                                        aria-label="View photo of Santhigiri College of Computer Sciences campus">
+                                        <img src="Assets/image/college-santhigiri.jpg"
+                                            alt="Santhigiri College of Computer Sciences campus, Vazhithala"
+                                            class="timeline-photo" width="92" height="68" loading="lazy">
+                                        <span class="timeline-photo-zoom" aria-hidden="true">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <circle cx="11" cy="11" r="7"></circle>
+                                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="timeline-content">
+                                        <div class="timeline-info">
+                                            <h3>Master of Computer Applications (MCA)</h3>
+                                            <p>Santhigiri College of Computer Sciences, Vazhithala</p>
+                                        </div>
+                                        <div class="timeline-meta">
+                                            <span class="timeline-date">2025 – 2027</span>
+                                            <span class="timeline-score">Status: Pursuing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- BCA -->
+                            <article class="timeline-item">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="card timeline-card">
+                                    <button type="button" class="timeline-photo-btn"
+                                        data-photo-src="Assets/image/college-augusthinose.jpg"
+                                        data-photo-title="Mar Augusthinose College"
+                                        data-photo-caption="Bachelor of Computer Applications (BCA) — Ramapuram, Kottayam, Kerala"
+                                        data-photo-alt="Mar Augusthinose College campus, Ramapuram"
+                                        aria-label="View photo of Mar Augusthinose College campus">
+                                        <img src="Assets/image/college-augusthinose.jpg"
+                                            alt="Mar Augusthinose College campus, Ramapuram" class="timeline-photo"
+                                            width="92" height="68" loading="lazy">
+                                        <span class="timeline-photo-zoom" aria-hidden="true">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <circle cx="11" cy="11" r="7"></circle>
+                                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="timeline-content">
+                                        <div class="timeline-info">
+                                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                                            <p>Mar Augusthinose College, Ramapuram</p>
+                                        </div>
+                                        <div class="timeline-meta">
+                                            <span class="timeline-date">2022 – 2025</span>
+                                            <span class="timeline-score">Score: 75%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Higher Secondary -->
+                            <article class="timeline-item">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="card timeline-card">
+                                    <button type="button" class="timeline-photo-btn"
+                                        data-photo-src="Assets/image/school-ollhss.jpg"
+                                        data-photo-title="Our Lady of Lourdes Higher Secondary School (O.L.L.H.S.S.)"
+                                        data-photo-caption="Higher Secondary Education — Uzhavoor, Kottayam, Kerala"
+                                        data-photo-alt="Our Lady of Lourdes Higher Secondary School (O.L.L.H.S.S.) campus, Uzhavoor"
+                                        aria-label="View photo of O.L.L.H.S.S. Uzhavoor campus">
+                                        <img src="Assets/image/school-ollhss.jpg"
+                                            alt="Our Lady of Lourdes Higher Secondary School (O.L.L.H.S.S.) campus, Uzhavoor"
+                                            class="timeline-photo" width="92" height="68" loading="lazy">
+                                        <span class="timeline-photo-zoom" aria-hidden="true">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <circle cx="11" cy="11" r="7"></circle>
+                                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="timeline-content">
+                                        <div class="timeline-info">
+                                            <h3>Higher Secondary Education</h3>
+                                            <p>O.L.L.H.S.S. Uzhavoor</p>
+                                        </div>
+                                        <div class="timeline-meta">
+                                            <span class="timeline-date">2020 – 2022</span>
+                                            <span class="timeline-score">Score: 80%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- SSLC -->
+                            <article class="timeline-item">
+                                <div class="timeline-dot" aria-hidden="true"></div>
+                                <div class="card timeline-card">
+                                    <button type="button" class="timeline-photo-btn"
+                                        data-photo-src="Assets/image/high school-ollhss.jpg"
+                                        data-photo-title="Our Lady of Lourdes Higher Secondary School (O.L.L.H.S.S.)"
+                                        data-photo-caption="Secondary School Leaving Certificate (SSLC) — Uzhavoor, Kottayam, Kerala"
+                                        data-photo-alt="O.L.L.H.S.S. Uzhavoor school building"
+                                        aria-label="View photo of O.L.L.H.S.S. Uzhavoor school building">
+                                        <img src="Assets/image/high school-ollhss.jpg"
+                                            alt="O.L.L.H.S.S. Uzhavoor school building" class="timeline-photo"
+                                            width="92" height="68" loading="lazy">
+                                        <span class="timeline-photo-zoom" aria-hidden="true">
+                                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <circle cx="11" cy="11" r="7"></circle>
+                                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="timeline-content">
+                                        <div class="timeline-info">
+                                            <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                                            <p>O.L.L.H.S.S. Uzhavoor</p>
+                                        </div>
+                                        <div class="timeline-meta">
+                                            <span class="timeline-date">2019 – 2020</span>
+                                            <span class="timeline-score">Score: 87%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             4. CERTIFICATIONS & WORKSHOPS SECTION
+             (3 Grid in One Row with Smaller Image & Large Preview Click)
+             ========================================= -->
+        <section id="certifications" class="page-section" aria-labelledby="certs-heading">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <span class="page-eyebrow">Credentials</span>
+                        <h2 id="certs-heading" class="page-title">Certifications &amp; Workshops</h2>
+                    </div>
+                    <p class="page-subtitle">Professional courses, workshops, and training programs that complement my
+                        academic background.</p>
+                </div>
+
+                <!-- Stats Strip -->
+                <div class="cert-stats">
+                    <div class="cert-stat">
+                        <span class="cert-stat-num">3</span>
+                        <span class="cert-stat-label">Credentials</span>
+                    </div>
+                    <div class="cert-stat-divider" aria-hidden="true"></div>
+                    <div class="cert-stat">
+                        <span class="cert-stat-num">2</span>
+                        <span class="cert-stat-label">Certifications</span>
+                    </div>
+                    <div class="cert-stat-divider" aria-hidden="true"></div>
+                    <div class="cert-stat">
+                        <span class="cert-stat-num">1</span>
+                        <span class="cert-stat-label">Workshop</span>
+                    </div>
+                </div>
+
+                <!-- 3 Grid in One Row -->
+                <div class="certs-grid">
+                    <!-- Certificate 1: NPTEL -->
+                    <article class="cert-card" aria-label="NPTEL Business English Communication">
+                        <button type="button" class="cert-thumb-wrap"
+                            data-photo-src="Assets/image/cert-nptel.jpg"
+                            data-photo-title="Business English Communication Certificate"
+                            data-photo-caption="Issued to Dhanya Biju by NPTEL &amp; IIT Madras (2024)"
+                            data-photo-alt="NPTEL Business English Communication Certificate issued to Dhanya Biju"
+                            aria-label="Preview full NPTEL Certificate">
+                            <img src="Assets/image/cert-nptel.jpg"
+                                alt="NPTEL Business English Communication Certificate issued to Dhanya Biju"
+                                class="cert-thumb-img" width="400" height="155" loading="lazy">
+                            <div class="cert-thumb-overlay" aria-hidden="true">
+                                <span class="cert-thumb-issuer">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+                                    </svg>
+                                    NPTEL · IIT Madras
+                                </span>
+                                <span class="cert-thumb-zoom">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="7"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    Preview
+                                </span>
+                            </div>
+                        </button>
+                        <div class="cert-card-body">
+                            <div class="cert-card-meta">
+                                <span class="cert-badge cert-badge--cert">Certification</span>
+                                <span class="cert-year">2024</span>
+                            </div>
+                            <h3 class="cert-title">Business English Communication</h3>
+                            <p class="cert-org">NPTEL &amp; IIT Madras</p>
+                            <p class="cert-desc">Strengthened professional written and verbal communication skills for
+                                workplace and academic settings.</p>
+                            <div class="cert-tags" aria-label="Topics">
+                                <span class="cert-tag">Communication</span>
+                                <span class="cert-tag">English</span>
+                                <span class="cert-tag">Professional</span>
+                            </div>
+                            <button type="button" class="btn btn-outline cert-preview-trigger"
+                                data-photo-src="Assets/image/cert-nptel.jpg"
+                                data-photo-title="Business English Communication Certificate"
+                                data-photo-caption="Issued to Dhanya Biju by NPTEL &amp; IIT Madras (2024)"
+                                data-photo-alt="NPTEL Business English Communication Certificate issued to Dhanya Biju">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                <span>Preview Certificate</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Certificate 2: Python Programming -->
+                    <article class="cert-card" aria-label="Python Programming Certificate from Avodha">
+                        <button type="button" class="cert-thumb-wrap"
+                            data-photo-src="Assets/image/cert-python.svg"
+                            data-photo-title="Python Programming Certificate"
+                            data-photo-caption="Issued to Dhanya Biju by Avodha Edutech (2024)"
+                            data-photo-alt="Python Programming Certificate from Avodha Edutech"
+                            aria-label="Preview full Python Programming Certificate">
+                            <img src="Assets/image/cert-python.svg"
+                                alt="Python Programming Certificate from Avodha Edutech" class="cert-thumb-img"
+                                width="400" height="155" loading="lazy">
+                            <div class="cert-thumb-overlay" aria-hidden="true">
+                                <span class="cert-thumb-issuer">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+                                    </svg>
+                                    Avodha Edutech
+                                </span>
+                                <span class="cert-thumb-zoom">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="7"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    Preview
+                                </span>
+                            </div>
+                        </button>
+                        <div class="cert-card-body">
+                            <div class="cert-card-meta">
+                                <span class="cert-badge cert-badge--cert">Certification</span>
+                                <span class="cert-year">2024</span>
+                            </div>
+                            <h3 class="cert-title">Python Programming Course</h3>
+                            <p class="cert-org">Avodha Edutech</p>
+                            <p class="cert-desc">Covered Python fundamentals, object-oriented programming, data structures,
+                                and practical application development.</p>
+                            <div class="cert-tags" aria-label="Topics">
+                                <span class="cert-tag">Python</span>
+                                <span class="cert-tag">OOP</span>
+                                <span class="cert-tag">Data Structures</span>
+                            </div>
+                            <button type="button" class="btn btn-outline cert-preview-trigger"
+                                data-photo-src="Assets/image/cert-python.svg"
+                                data-photo-title="Python Programming Certificate"
+                                data-photo-caption="Issued to Dhanya Biju by Avodha Edutech (2024)"
+                                data-photo-alt="Python Programming Certificate from Avodha Edutech">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                <span>Preview Certificate</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Certificate 3: TALENTO Workshop -->
+                    <article class="cert-card" aria-label="TALENTO Program by Enbridge">
+                        <button type="button" class="cert-thumb-wrap"
+                            data-photo-src="Assets/image/cert-talento.svg"
+                            data-photo-title="TALENTO Program Certificate of Participation"
+                            data-photo-caption="Awarded to Dhanya Biju by Enbridge (2024)"
+                            data-photo-alt="TALENTO Program Certificate from Enbridge"
+                            aria-label="Preview full TALENTO Certificate">
+                            <img src="Assets/image/cert-talento.svg" alt="TALENTO Program Certificate from Enbridge"
+                                class="cert-thumb-img" width="400" height="155" loading="lazy">
+                            <div class="cert-thumb-overlay" aria-hidden="true">
+                                <span class="cert-thumb-issuer">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+                                    </svg>
+                                    Enbridge
+                                </span>
+                                <span class="cert-thumb-zoom">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="7"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    Preview
+                                </span>
+                            </div>
+                        </button>
+                        <div class="cert-card-body">
+                            <div class="cert-card-meta">
+                                <span class="cert-badge cert-badge--workshop">Workshop</span>
+                                <span class="cert-year">2024</span>
+                            </div>
+                            <h3 class="cert-title">TALENTO Program</h3>
+                            <p class="cert-org">Enbridge</p>
+                            <p class="cert-desc">Exposure to career development strategies, professional workplace skills,
+                                and industry best practices.</p>
+                            <div class="cert-tags" aria-label="Topics">
+                                <span class="cert-tag">Career Dev</span>
+                                <span class="cert-tag">Industry Practices</span>
+                                <span class="cert-tag">Mentoring</span>
+                            </div>
+                            <button type="button" class="btn btn-outline cert-preview-trigger"
+                                data-photo-src="Assets/image/cert-talento.svg"
+                                data-photo-title="TALENTO Program Certificate of Participation"
+                                data-photo-caption="Awarded to Dhanya Biju by Enbridge (2024)"
+                                data-photo-alt="TALENTO Program Certificate from Enbridge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                <span>Preview Certificate</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             5. SKILLS SECTION
+             ========================================= -->
+        <section id="skills" class="page-section" aria-labelledby="skills-heading">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <span class="page-eyebrow">Capabilities</span>
+                        <h2 id="skills-heading" class="page-title">Technical Skills</h2>
+                    </div>
+                    <p class="page-subtitle">Languages, frameworks, databases, and computer science fundamentals.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <article class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </article>
+
+                    <!-- Category 2 -->
+                    <article class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">Frameworks &amp; Libraries</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </article>
+
+                    <!-- Category 3 -->
+                    <article class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">Web Technologies &amp; Databases</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">DBMS</span>
+                        </div>
+                    </article>
+
+                    <!-- Category 4 -->
+                    <article class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="18" cy="18" r="3"></circle>
+                                    <circle cx="6" cy="6" r="3"></circle>
+                                    <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                                    <line x1="6" y1="9" x2="6" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h3 class="skill-title">Tools &amp; Core Concepts</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">Data Structures &amp; Algorithms</span>
+                            <span class="skill-tag">AI/ML Fundamentals</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             6. PROJECTS SECTION
+             ========================================= -->
+        <section id="projects" class="page-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <span class="page-eyebrow">Selected Work</span>
+                        <h2 id="projects-heading" class="page-title">Projects</h2>
+                    </div>
+                    <p class="page-subtitle">Database-driven web applications built across academic and personal
+                        coursework.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="card project-card">
+                        <div class="project-preview">
+                            <img src="Assets/image/project-pharmacy.svg"
+                                alt="AI-Based Pharmacy Management System preview" width="640" height="340"
+                                loading="lazy">
+                        </div>
+                        <h3 class="project-title">AI-Based Pharmacy Management System</h3>
+                        <p class="project-desc">
+                            Web-based pharmacy platform for medicines, inventory, billing, suppliers, and staff with an
+                            AI Smart Pricing module.
+                        </p>
+                        <div class="tag-list">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Smart Pricing AI</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#contact" class="btn btn-outline"
+                                data-inquiry-project="AI-Based Pharmacy Management System">Project Inquiry →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="card project-card">
+                        <div class="project-preview">
+                            <img src="Assets/image/project-realestate.svg" alt="Real Estate Website preview" width="640"
+                                height="340" loading="lazy">
+                        </div>
+                        <h3 class="project-title">Real Estate Website</h3>
+                        <p class="project-desc">
+                            Django property listing platform with search, filtering, inquiry management, and an
+                            administrative panel.
+                        </p>
+                        <div class="tag-list">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#contact" class="btn btn-outline"
+                                data-inquiry-project="Real Estate Website">Project Inquiry →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="card project-card">
+                        <div class="project-preview">
+                            <img src="Assets/image/project-hotel.svg" alt="Online Hotel Management System preview"
+                                width="640" height="340" loading="lazy">
+                        </div>
+                        <h3 class="project-title">Online Hotel Management System</h3>
+                        <p class="project-desc">
+                            Web application streamlining hotel reservations, customer records, and operations via a
+                            PHP/MySQL admin panel.
+                        </p>
+                        <div class="tag-list">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#contact" class="btn btn-outline"
+                                data-inquiry-project="Online Hotel Management System">Project Inquiry →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+             7. CONTACT SECTION
+             ========================================= -->
+        <section id="contact" class="page-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <span class="page-eyebrow">Reach Out</span>
+                        <h2 id="contact-heading" class="page-title">Contact</h2>
+                    </div>
+                    <p class="page-subtitle">Open to software development internships, projects, and technical
+                        collaborations.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left Column: Info -->
+                    <aside class="card contact-info-card">
+                        <h2>Let's Connect</h2>
+                        <p class="info-intro">Feel free to get in touch using any of the links below.</p>
+
+                        <div class="contact-items">
+                            <a href="mailto:dhanyabiju7007@gmail.com" class="contact-item">
+                                <div class="item-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <span class="item-label">Email</span>
+                                    <span class="item-value">dhanyabiju7007@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/dhanya-biju2003" target="_blank"
+                                rel="noopener noreferrer" class="contact-item">
+                                <div class="item-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <span class="item-label">LinkedIn</span>
+                                    <span class="item-value">linkedin.com/in/dhanya-biju2003</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-item">
+                                <div class="item-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <span class="item-label">Location</span>
+                                    <span class="item-value">Uzhavoor, Kottayam, Kerala</span>
+                                </div>
+                            </div>
+
+                            <a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
+                                class="contact-item">
+                                <div class="item-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    </svg>
+                                </div>
+                                <div class="item-text">
+                                    <span class="item-label">Resume</span>
+                                    <span class="item-value">Download CV (PDF)</span>
+                                </div>
+                            </a>
+                        </div>
+                    </aside>
+
+                    <!-- Right Column: Netlify Forms Connected Form -->
+                    <div class="card contact-form-card">
+                        <h2>Send a Message</h2>
+                        <p class="form-note">
+                            Have a project, internship opportunity, or collaboration in mind? Send a message directly using the form below.
+                        </p>
+
+                        <form id="contactForm" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+                            <!-- Netlify Forms Hidden Configuration Fields -->
+                            <input type="hidden" name="form-name" value="contact">
+                            <p style="display:none;" aria-hidden="true">
+                                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                            </p>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="senderName">Name</label>
+                                    <input type="text" id="senderName" name="name" placeholder="Your name"
+                                        autocomplete="name" required>
+                                    <span id="nameError" class="field-error" aria-live="polite"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="senderEmail">Email</label>
+                                    <input type="email" id="senderEmail" name="email" placeholder="you@example.com"
+                                        autocomplete="email" required>
+                                    <span id="emailError" class="field-error" aria-live="polite"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    placeholder="Project inquiry or opportunity" required>
+                                <span id="subjectError" class="field-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Write your message..."
+                                    required></textarea>
+                                <span id="messageError" class="field-error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary submit-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                    <span>Send Message</span>
+                                </button>
+                                <p id="formFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Professional Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="logo" aria-label="dhanya.org home">
+                    <img src="Assets/image/logo.svg" alt="dhanya.org logo" class="logo-icon" width="28" height="28">
+                    <span class="logo-text">dhanya<span>.org</span></span>
+                </a>
+                <p>MCA Student &amp; Aspiring Software Developer — Building clean, database-driven web applications.</p>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            </ul>
+
+            <div class="footer-copy">
+                <span>&copy; 2026 Dhanya Biju. All rights reserved.</span>
+                <span>Designed &amp; Developed with modern web standards.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
     <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
     </button>
+
+    <!-- Lightbox Preview Modal (for Certificates & Campus Photos) -->
+    <div id="photoModal" class="photo-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+        aria-hidden="true">
+        <div class="photo-modal-backdrop" aria-hidden="true"></div>
+        <div class="photo-modal-dialog">
+            <div class="photo-modal-header">
+                <h3 id="modalTitle" class="photo-modal-title">Preview</h3>
+                <button type="button" id="modalClose" class="photo-modal-close"
+                    aria-label="Close preview">&times;</button>
+            </div>
+            <div class="photo-modal-body">
+                <div class="photo-modal-img-wrap">
+                    <img id="modalPhoto" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"
+                        alt="Preview image" width="800" height="500">
+                </div>
+                <p id="modalCaption" class="photo-modal-caption"></p>
+            </div>
+        </div>
+    </div>
 
     <script src="Assets/javascript/common.js" defer></script>
 </body>

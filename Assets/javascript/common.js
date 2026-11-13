@@ -82,23 +82,56 @@
     }
 
     /* -----------------------------------------
-       2. Active Navigation Link Highlighting
+       2. Active Navigation Link Highlighting & Scrollspy
     ----------------------------------------- */
-    var pathSegments = window.location.pathname.split('/');
-    var currentPage = pathSegments[pathSegments.length - 1] || 'index.html';
+    var navLinks = navMenu ? navMenu.querySelectorAll('a:not(.nav-btn)') : [];
+    var pageSections = document.querySelectorAll('section[id]');
 
-    if (navMenu) {
-        navMenu.querySelectorAll('a:not(.nav-btn)').forEach(function (link) {
-            var href = link.getAttribute('href');
-            if (href === currentPage) {
-                link.classList.add('active');
-                link.setAttribute('aria-current', 'page');
-            } else {
-                link.classList.remove('active');
-                link.removeAttribute('aria-current');
+    function updateActiveNav() {
+        if (!pageSections.length || !navLinks.length) return;
+        var scrollPos = window.scrollY + 140;
+        var currentSectionId = '';
+
+        pageSections.forEach(function (section) {
+            var top = section.offsetTop;
+            var height = section.offsetHeight;
+            if (scrollPos >= top && scrollPos < top + height) {
+                currentSectionId = section.getAttribute('id');
             }
         });
+
+        if (!currentSectionId && window.scrollY < 200 && pageSections[0]) {
+            currentSectionId = pageSections[0].getAttribute('id');
+        }
+
+        if (currentSectionId) {
+            navLinks.forEach(function (link) {
+                var href = link.getAttribute('href') || '';
+                var hash = href.indexOf('#') !== -1 ? href.substring(href.indexOf('#') + 1) : '';
+                if (hash === currentSectionId) {
+                    link.classList.add('active');
+                    link.setAttribute('aria-current', 'page');
+                } else if (href.indexOf('#') !== -1) {
+                    link.classList.remove('active');
+                    link.removeAttribute('aria-current');
+                }
+            });
+        }
     }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
+
+    // Project inquiry trigger handler
+    document.querySelectorAll('[data-inquiry-project]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var projectName = btn.getAttribute('data-inquiry-project');
+            var subjectInput = document.getElementById('subject');
+            if (subjectInput && projectName) {
+                subjectInput.value = 'Inquiry regarding ' + projectName;
+            }
+        });
+    });
 
     /* -----------------------------------------
        3. Back-to-Top Button
@@ -127,7 +160,7 @@
     }
 
     /* -----------------------------------------
-       4. Contact Form Validation & Mailto Handoff
+       4. Contact Form Validation & Netlify Forms Submission
     ----------------------------------------- */
     var contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -136,6 +169,7 @@
         var subjectInput = document.getElementById('subject');
         var messageInput = document.getElementById('message');
         var feedbackEl = document.getElementById('formFeedback');
+        var submitBtn = contactForm.querySelector('button[type="submit"]');
 
         // Pre-fill subject if navigated from a project card (?project=...)
         var params = new URLSearchParams(window.location.search);
@@ -201,19 +235,59 @@
                 return;
             }
 
-            var mailSubject = encodeURIComponent(subjectVal);
-            var mailBody = encodeURIComponent(
-                'Name: ' + nameVal + '\n' +
-                'Email: ' + emailVal + '\n\n' +
-                messageVal
-            );
-
-            if (feedbackEl) {
-                feedbackEl.textContent = 'Validation passed. Opening your email client to send this message to dhanyabiju7007@gmail.com...';
-                feedbackEl.className = 'form-feedback is-success';
+            // Disable submit button & show sending state
+            var originalBtnContent = submitBtn ? submitBtn.innerHTML : '';
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.setAttribute('aria-busy', 'true');
+                submitBtn.innerHTML = '<span>Sending...</span>';
             }
 
-            window.location.href = 'mailto:dhanyabiju7007@gmail.com?subject=' + mailSubject + '&body=' + mailBody;
+            if (feedbackEl) {
+                feedbackEl.textContent = 'Sending your message...';
+                feedbackEl.className = 'form-feedback';
+            }
+
+            // Prepare Form Data for Netlify Forms POST
+            var formData = new FormData(contactForm);
+            formData.set('form-name', contactForm.getAttribute('name') || 'contact');
+
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(function (response) {
+                if (response.ok) {
+                    if (feedbackEl) {
+                        feedbackEl.textContent = '✓ Thank you! Your message has been sent successfully. I will get back to you soon.';
+                        feedbackEl.className = 'form-feedback is-success';
+                    }
+                    contactForm.reset();
+                } else {
+                    throw new Error('Netlify form submission failed (Status ' + response.status + ')');
+                }
+            })
+            .catch(function () {
+                // Graceful fallback for local development or connection failures:
+                var mailSubject = encodeURIComponent(subjectVal);
+                var mailBody = encodeURIComponent(
+                    'Name: ' + nameVal + '\n' +
+                    'Email: ' + emailVal + '\n\n' +
+                    messageVal
+                );
+                if (feedbackEl) {
+                    feedbackEl.innerHTML = 'Form submitted. If not redirected on Netlify, <a href="mailto:dhanyabiju7007@gmail.com?subject=' + mailSubject + '&body=' + mailBody + '" style="text-decoration:underline;color:inherit;font-weight:600;">click here to send via email</a>.';
+                    feedbackEl.className = 'form-feedback is-success';
+                }
+            })
+            .finally(function () {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.removeAttribute('aria-busy');
+                    submitBtn.innerHTML = originalBtnContent;
+                }
+            });
         });
     }
 

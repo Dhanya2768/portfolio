@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="560" fill="url(#bgGrad)"/>
+  
+  <!-- Outer border -->
+  <rect x="24" y="24" width="752" height="512" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6"/>
+  <!-- Inner border -->
+  <rect x="36" y="36" width="728" height="488" rx="12" fill="none" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Corner Ornaments -->
+  <g stroke="url(#goldGrad)" stroke-width="2" fill="none">
+    <path d="M48 64 L48 48 L64 48"/>
+    <path d="M752 64 L752 48 L736 48"/>
+    <path d="M48 496 L48 512 L64 512"/>
+    <path d="M752 496 L752 512 L736 512"/>
+  </g>
+
+  <!-- Organization Badge / Header -->
+  <rect x="300" y="58" width="200" height="34" rx="17" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="400" y="80" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="3">AVODHA EDUTECH</text>
+
+  <!-- Certificate Heading -->
+  <text x="400" y="145" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="28" font-weight="700" fill="#f8fafc" letter-spacing="1">CERTIFICATE OF COMPLETION</text>
+  <line x1="280" y1="165" x2="520" y2="165" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="400" y="200" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" fill="#94a3b8">This is to proudly certify that</text>
+  
+  <!-- Recipient Name -->
+  <text x="400" y="248" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="34" font-weight="700" fill="url(#goldGrad)" letter-spacing="0.5">DHANYA BIJU</text>
+  <line x1="260" y1="265" x2="540" y2="265" stroke="#334155" stroke-width="1"/>
+
+  <!-- Description -->
+  <text x="400" y="305" text-anchor="middle" font-family="'Inter', sans-serif" font-size="15" fill="#cbd5e1">has successfully completed the comprehensive professional course in</text>
+  <text x="400" y="345" text-anchor="middle" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="24" font-weight="700" fill="#60a5fa">Python Programming</text>
+  <text x="400" y="380" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" fill="#94a3b8">Covering OOP, Data Structures, Algorithms &amp; Application Development</text>
+
+  <!-- Stamp / Seal Icon -->
+  <g transform="translate(400, 445)">
+    <circle r="36" fill="#1e293b" stroke="url(#goldGrad)" stroke-width="2"/>
+    <circle r="30" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,2"/>
+    <text y="5" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#fbbf24" letter-spacing="1">VERIFIED</text>
+  </g>
+
+  <!-- Footer Signatures & Date -->
+  <text x="140" y="460" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Avodha Edutech</text>
+  <line x1="80" y1="440" x2="200" y2="440" stroke="#475569" stroke-width="1"/>
+  <text x="140" y="478" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Training Division</text>
+
+  <text x="660" y="460" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Year: 2024</text>
+  <line x1="600" y1="440" x2="720" y2="440" stroke="#475569" stroke-width="1"/>
+  <text x="660" y="478" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="#64748b">Credential ID: AVD-PY-2024</text>
+</svg>
+

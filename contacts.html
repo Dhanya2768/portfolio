@@ -70,13 +70,13 @@
 
                 <nav aria-label="Primary Navigation">
                     <ul id="navMenu" class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li><a href="certifications.html">Certifications</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contacts.html" class="active" aria-current="page">Contact</a></li>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#education">Education</a></li>
+                        <li><a href="index.html#certifications">Certifications</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#contact" class="active" aria-current="page">Contact</a></li>
                         <li><a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
                                 class="nav-btn">Download CV</a></li>
                     </ul>
@@ -166,15 +166,19 @@
                         </div>
                     </aside>
 
-                    <!-- Right Column: Validated Form -->
+                    <!-- Right Column: Netlify Forms Connected Form -->
                     <div class="card contact-form-card">
                         <h2>Send a Message</h2>
                         <p class="form-note">
-                            Submitting validates your message and opens your email application via <code>mailto:</code>
-                            addressed to <strong>dhanyabiju7007@gmail.com</strong> (no backend server stores messages).
+                            Have a project, internship opportunity, or collaboration in mind? Send a message directly using the form below.
                         </p>
 
-                        <form id="contactForm" class="contact-form" novalidate>
+                        <form id="contactForm" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+                            <!-- Netlify Forms Hidden Configuration Fields -->
+                            <input type="hidden" name="form-name" value="contact">
+                            <p style="display:none;" aria-hidden="true">
+                                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                            </p>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="senderName">Name</label>
