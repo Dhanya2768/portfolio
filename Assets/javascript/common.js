@@ -276,8 +276,9 @@
                     'Email: ' + emailVal + '\n\n' +
                     messageVal
                 );
+                var gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=dhanyabiju7007@gmail.com&su=' + mailSubject + '&body=' + mailBody;
                 if (feedbackEl) {
-                    feedbackEl.innerHTML = 'Form submitted. If not redirected on Netlify, <a href="mailto:dhanyabiju7007@gmail.com?subject=' + mailSubject + '&body=' + mailBody + '" style="text-decoration:underline;color:inherit;font-weight:600;">click here to send via email</a>.';
+                    feedbackEl.innerHTML = 'Form ready. <a href="' + gmailUrl + '" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;color:inherit;font-weight:600;">Click here to send directly in Gmail</a> (or via <a href="mailto:dhanyabiju7007@gmail.com?subject=' + mailSubject + '&body=' + mailBody + '" style="text-decoration:underline;color:inherit;font-weight:600;">default email client</a>).';
                     feedbackEl.className = 'form-feedback is-success';
                 }
             })
