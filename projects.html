@@ -117,21 +117,61 @@
                             <span class="tag">Smart Pricing AI</span>
                         </div>
                         <div class="project-actions">
+                            <button type="button" class="btn btn-secondary project-details-btn"
+                                data-project="pharmacy" data-screen-index="0">View Details</button>
                             <a href="contacts.html?project=AI-Based%20Pharmacy%20Management%20System"
-                                class="btn btn-outline">Project Inquiry →</a>
+                                class="btn btn-outline">Inquiry →</a>
                         </div>
                     </article>
 
                     <!-- Project 2 -->
                     <article class="card project-card">
-                        <div class="project-preview">
-                            <img src="Assets/image/project-realestate.svg" alt="Real Estate Website preview" width="640"
-                                height="340" loading="eager">
+                        <div class="project-preview project-preview--grid">
+                            <div class="preview-grid" role="group" aria-label="Hilltop project screenshot preview tiles">
+                                <button type="button" class="preview-grid-tile" data-project="real-estate"
+                                    data-screen-index="0" aria-label="Inspect Hilltop Landing Page screenshot in detail">
+                                    <img src="Assets/image/hilltop-home.jpg" alt="Hilltop Landing Page screenshot"
+                                        loading="eager" width="320" height="170">
+                                    <span class="preview-tile-tag">Landing</span>
+                                </button>
+                                <button type="button" class="preview-grid-tile" data-project="real-estate"
+                                    data-screen-index="1"
+                                    aria-label="Inspect Hilltop Seller Dashboard screenshot in detail">
+                                    <img src="Assets/image/hilltop-seller-dashboard.png"
+                                        alt="Hilltop Seller Dashboard screenshot" loading="eager" width="320"
+                                        height="170">
+                                    <span class="preview-tile-tag">Seller</span>
+                                </button>
+                                <button type="button" class="preview-grid-tile" data-project="real-estate"
+                                    data-screen-index="2"
+                                    aria-label="Inspect Hilltop Buyer Purchase Offers screenshot in detail">
+                                    <img src="Assets/image/hilltop-buyer-offers.png"
+                                        alt="Hilltop Buyer Purchase Offers screenshot" loading="eager" width="320"
+                                        height="170">
+                                    <span class="preview-tile-tag">Offers</span>
+                                </button>
+                                <button type="button" class="preview-grid-tile" data-project="real-estate"
+                                    data-screen-index="3"
+                                    aria-label="Inspect Hilltop Owned Properties screenshot in detail">
+                                    <img src="Assets/image/hilltop-buyer-properties.png"
+                                        alt="Hilltop Owned Properties screenshot" loading="eager" width="320"
+                                        height="170">
+                                    <span class="preview-tile-tag">Transfers</span>
+                                </button>
+                            </div>
+                            <div class="preview-grid-hint" aria-hidden="true">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="7"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                <span>4 Screens • Click to Inspect</span>
+                            </div>
                         </div>
-                        <h2 class="project-title">Real Estate Website</h2>
+                        <h2 class="project-title">Real Estate Website (Hilltop)</h2>
                         <p class="project-desc">
-                            Django property listing platform with search, filtering, inquiry management, and an
-                            administrative panel.
+                            Django property listing & digital transfer platform with role-based buyer/seller portals,
+                            5-angle photo inspection, and transparent offer negotiations.
                         </p>
                         <div class="tag-list">
                             <span class="tag">Python</span>
@@ -139,8 +179,9 @@
                             <span class="tag">MySQL</span>
                         </div>
                         <div class="project-actions">
-                            <a href="contacts.html?project=Real%20Estate%20Website" class="btn btn-outline">Project
-                                Inquiry →</a>
+                            <button type="button" class="btn btn-secondary project-details-btn"
+                                data-project="real-estate" data-screen-index="0">Screenshots & Details</button>
+                            <a href="contacts.html?project=Real%20Estate%20Website" class="btn btn-outline">Inquiry →</a>
                         </div>
                     </article>
 
@@ -163,14 +204,83 @@
                             <span class="tag">MySQL</span>
                         </div>
                         <div class="project-actions">
+                            <button type="button" class="btn btn-secondary project-details-btn"
+                                data-project="hotel" data-screen-index="0">View Details</button>
                             <a href="contacts.html?project=Online%20Hotel%20Management%20System"
-                                class="btn btn-outline">Project Inquiry →</a>
+                                class="btn btn-outline">Inquiry →</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Project Details & Screenshot Lightbox Modal -->
+    <div id="projectModal" class="project-modal" role="dialog" aria-modal="true"
+        aria-labelledby="projectModalTitle" aria-hidden="true">
+        <div class="project-modal-backdrop" aria-hidden="true"></div>
+        <div class="project-modal-dialog">
+            <div class="project-modal-header">
+                <div class="project-modal-header-info">
+                    <span id="projectModalCategory" class="project-modal-badge">Featured Project</span>
+                    <h2 id="projectModalTitle" class="project-modal-title">Project Details</h2>
+                </div>
+                <button type="button" id="projectModalClose" class="project-modal-close"
+                    aria-label="Close project details">&times;</button>
+            </div>
+            <div class="project-modal-body">
+                <!-- Screenshot / Media Viewer -->
+                <div class="project-modal-viewer">
+                    <div class="project-modal-screen-wrap">
+                        <img id="projectModalImg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"
+                            alt="Project screenshot view" width="900" height="500">
+                        <button type="button" id="projectNavPrev" class="project-nav-btn project-nav-prev"
+                            aria-label="Previous screenshot">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button type="button" id="projectNavNext" class="project-nav-btn project-nav-next"
+                            aria-label="Next screenshot">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Dynamic screen selection thumbnails strip -->
+                    <div id="projectThumbs" class="project-thumbs-strip" role="tablist"
+                        aria-label="Screenshots Gallery"></div>
+                </div>
+
+                <!-- Detailed Project Information -->
+                <div class="project-modal-info">
+                    <div class="project-modal-screen-title-row">
+                        <h3 id="projectScreenTitle" class="project-screen-title">Module Overview</h3>
+                        <span id="projectScreenCounter" class="project-screen-counter">1 of 1</span>
+                    </div>
+                    <p id="projectScreenDesc" class="project-screen-desc"></p>
+
+                    <div class="project-modal-section">
+                        <h4 class="project-section-heading">Key Capabilities & Features</h4>
+                        <ul id="projectKeyFeatures" class="project-features-list"></ul>
+                    </div>
+
+                    <div class="project-modal-section">
+                        <h4 class="project-section-heading">Architecture & Technologies</h4>
+                        <div id="projectTechTags" class="tag-list"></div>
+                        <p id="projectArchNotes" class="project-arch-notes"></p>
+                    </div>
+
+                    <div class="project-modal-footer">
+                        <a id="projectModalInquiryBtn" href="contacts.html" class="btn btn-primary">Project
+                            Inquiry →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"

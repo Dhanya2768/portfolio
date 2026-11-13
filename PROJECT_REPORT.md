@@ -43,8 +43,9 @@ TechNova/
 ├── index.html                         (6,401 B) Home page & split-layout hero
 ├── about.html                         (7,876 B) Biography, interests & capabilities
 ├── education.html                     (8,526 B) Academic timeline, workshop & certification
+├── certifications.html                (~10 KB)  3-column credentials grid & certificate lightbox modal
 ├── skills.html                        (8,598 B) Categorized technical skills grid
-├── projects.html                      (7,317 B) Three featured software project cards
+├── projects.html                      (~11 KB)  Three featured project cards, 2×2 Hilltop grid & detail modal
 ├── contacts.html                      (11,115 B) Direct info, CV download & validated mailto form
 ├── PROJECT_REPORT.md                  Documentation (this file)
 └── Assets/
@@ -53,11 +54,12 @@ TechNova/
     │   ├── style.css                  (2,334 B)  Home hero split layout & profile frame
     │   ├── about.css                  (2,592 B)  Two-column About grid & capability cards
     │   ├── education.css              (2,999 B)  Vertical timeline & certifications sidebar
+    │   ├── certifications.css         (~6.5 KB)  3-column certificate grid, previews & lightbox modal
     │   ├── skill.css                  (1,608 B)  Compact 3×2 / 2-column / 1-column skills grid
-    │   ├── project.css                (1,420 B)  3-col desktop / 2-col tablet / 1-col mobile project cards
+    │   ├── project.css                (~8 KB)    3-col desktop grid, 2×2 Hilltop preview & details modal
     │   └── contact.css                (4,024 B)  Two-column contact card, form controls & status alerts
     ├── javascript/
-    │   └── common.js                  (6,737 B)  Navigation toggle, active route, scroll control, form validation
+    │   └── common.js                  (~15 KB)   Theme toggle, nav drawer, scroll control, project & cert modals
     ├── image/
     │   ├── favicon.svg                (746 B)    16×16-ready violet rounded monogram icon
     │   ├── logo.svg                   (866 B)    Primary geometric D monogram SVG
@@ -65,6 +67,13 @@ TechNova/
     │   ├── college-santhigiri.jpg     (~1 MB)    Santhigiri College of Computer Sciences campus photograph
     │   ├── college-augusthinose.jpg   (~970 KB)  Mar Augusthinose College campus photograph
     │   ├── school-ollhss.jpg          (~1.08 MB) O.L.L.H.S.S. Uzhavoor campus photograph
+    │   ├── cert-nptel.jpg             (258 KB)   Authentic NPTEL & IIT Madras Business English certificate
+    │   ├── cert-python.svg            (4.8 KB)   Avodha Python Programming Course certificate vector graphic
+    │   ├── cert-talento.svg           (4.7 KB)   Enbridge TALENTO Program workshop certificate vector graphic
+    │   ├── hilltop-home.jpg           (~75 KB)   Hilltop Real Estate landing page & discovery showcase
+    │   ├── hilltop-seller-dashboard.png (~130 KB) Hilltop Certified Seller Dashboard & inventory
+    │   ├── hilltop-buyer-offers.png   (~86 KB)   Hilltop Buyer Purchase Offers & bidding desk
+    │   ├── hilltop-buyer-properties.png (~88 KB) Hilltop My Owned Properties & title transfer ledger
     │   ├── project-pharmacy.svg       (3,170 B)  AI-Based Pharmacy Management System preview UI
     │   ├── project-realestate.svg     (2,865 B)  Real Estate Website preview UI
     │   └── project-hotel.svg          (3,038 B)  Online Hotel Management System preview UI
@@ -166,9 +175,9 @@ The portfolio features a modern, tech-forward developer color theme with full Li
      - **Core CS Concepts:** `OOP`, `DBMS`, `Data Structures & Algorithms`
 5. **Projects (`projects.html` + `Assets/css/project.css`)**
    - Equal-height 3-column card grid on desktop, 2-column grid on tablet (`≤ 1024px`), and single-column stack on mobile (`≤ 680px`):
-     - **AI-Based Pharmacy Management System** (`project-pharmacy.svg`) — Tags: `PHP`, `MySQL`, `Smart Pricing AI` — CTA: `contacts.html?project=AI-Based%20Pharmacy%20Management%20System`
-     - **Real Estate Website** (`project-realestate.svg`) — Tags: `Python`, `Django`, `MySQL` — CTA: `contacts.html?project=Real%20Estate%20Website`
-     - **Online Hotel Management System** (`project-hotel.svg`) — Tags: `HTML`, `CSS`, `JavaScript`, `PHP`, `MySQL` — CTA: `contacts.html?project=Online%20Hotel%20Management%20System`
+     - **AI-Based Pharmacy Management System** (`project-pharmacy.svg`) — Tags: `PHP`, `MySQL`, `Smart Pricing AI` — Interactive Details modal with algorithmic pricing & inventory specs + Inquiry CTA.
+     - **Real Estate Website (Hilltop)** — Featuring a **2×2 Small Grid Screenshot Preview** directly on the card displaying 4 authentic system screenshots (`hilltop-home.jpg`, `hilltop-seller-dashboard.png`, `hilltop-buyer-offers.png`, `hilltop-buyer-properties.png`), a "4 Screens • Click to Inspect" badge, and an interactive **Project Details Lightbox Modal** with tabbed screenshot switcher, keyboard navigation (`←`/`→`/`Esc`), and comprehensive screen-by-screen feature breakdowns (Landing & Discovery, Certified Seller Dashboard, Buyer Offers & Bidding, Owned Properties & Title Transfers) — Tags: `Python`, `Django`, `MySQL` — Inquiry CTA pre-fills subject.
+     - **Online Hotel Management System** (`project-hotel.svg`) — Tags: `HTML`, `CSS`, `JavaScript`, `PHP`, `MySQL` — Interactive Details modal with room booking & guest management specs + Inquiry CTA.
    - Zero nonfunctional `#` links or invented GitHub/live deployment URLs.
 6. **Contact (`contacts.html` + `Assets/css/contact.css`)**
    - Two-column layout pairing direct contact channels (`dhanyabiju7007@gmail.com`, `https://www.linkedin.com/in/dhanya-biju2003`, `Uzhavoor, Kottayam, Kerala`, and CV download button) with a client-side validated message form. Phone number was excluded per user privacy instruction.
