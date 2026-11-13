@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="dhanya.org logo">
+  <defs>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="60%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="2" />
+  <path
+    fill="none"
+    stroke="url(#techGrad)"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M21 17 H33 C41.5 17 46.5 23 46.5 32 C46.5 41 41.5 47 33 47 H21 Z"
+  />
+  <path
+    fill="none"
+    stroke="#2563EB"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M21 32 H31.5 L35.5 28"
+  />
+  <circle cx="36.5" cy="27" r="2.8" fill="#0284C7" />
+</svg>

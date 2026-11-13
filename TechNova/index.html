@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanya Biju | MCA Student &amp; Aspiring Software Developer</title>
+    <meta name="description"
+        content="Portfolio of Dhanya Biju — MCA Student and Aspiring Software Developer skilled in Java, Python, PHP, Laravel, Django, MySQL, and rule-based AI web applications.">
+    <meta property="og:title" content="Dhanya Biju | Portfolio">
+    <meta property="og:description"
+        content="MCA Student and Aspiring Software Developer building clean, database-driven web applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="dhanya.org">
+    <meta property="og:image" content="Assets/image/image.jpeg">
+    <link rel="icon" type="image/svg+xml" href="Assets/image/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/common.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script>
+        (function () {
+            var theme = localStorage.getItem('portfolio-theme');
+            if (!theme) {
+                theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo" aria-label="dhanya.org home">
+                <img src="Assets/image/logo.svg" alt="dhanya.org logo" class="logo-icon" width="34" height="34">
+                <span class="logo-text">dhanya<span>.org</span></span>
+            </a>
+
+            <div class="nav-right">
+                <button type="button" id="themeToggle" class="theme-toggle-btn" aria-label="Toggle color theme"
+                    title="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button type="button" id="navToggle" class="nav-toggle" aria-label="Toggle navigation menu"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+
+                <nav aria-label="Primary Navigation">
+                    <ul id="navMenu" class="nav-links">
+                        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
+                                class="nav-btn">Download CV</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-section" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <span class="hero-label">
+                            <span class="hero-label-dot" aria-hidden="true"></span>
+                            Portfolio | Class of 2027
+                        </span>
+                        <h1 id="hero-heading">Hi, I'm <span>Dhanya Biju</span></h1>
+                        <p class="hero-role">MCA Student | Aspiring Software Developer</p>
+                        <p class="hero-intro">
+                            MCA student with a BCA background and foundational knowledge in Java, Python, PHP, Laravel,
+                            Django, and MySQL. I enjoy building database-driven web applications and integrating
+                            practical rule-based AI features.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+                            <a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline">Download CV</a>
+                        </div>
+
+                        <div class="hero-links">
+                            <a href="https://www.linkedin.com/in/dhanya-biju2003" target="_blank"
+                                rel="noopener noreferrer" class="social-pill">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+                                    </path>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:dhanyabiju7007@gmail.com" class="social-pill">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                                <span>dhanyabiju7007@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="portrait-backdrop">
+                            <div class="portrait-frame">
+                                <img src="Assets/image/image.jpeg" alt="Portrait of Dhanya Biju" width="310"
+                                    height="372" loading="eager" decoding="async">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="Assets/javascript/common.js" defer></script>
+</body>
+
+</html>

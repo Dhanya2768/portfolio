@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Dhanya Biju — dhanya.org</title>
+    <meta name="description"
+        content="Technical skills of Dhanya Biju across programming languages, frameworks, web technologies, databases, version control, and core CS concepts.">
+    <meta property="og:title" content="Skills | Dhanya Biju">
+    <meta property="og:description"
+        content="Programming languages, frameworks, web technologies, databases, tools, and CS concepts.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="dhanya.org">
+    <link rel="icon" type="image/svg+xml" href="Assets/image/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/common.css">
+    <link rel="stylesheet" href="Assets/css/skill.css">
+    <script>
+        (function () {
+            var theme = localStorage.getItem('portfolio-theme');
+            if (!theme) {
+                theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo" aria-label="dhanya.org home">
+                <img src="Assets/image/logo.svg" alt="dhanya.org logo" class="logo-icon" width="34" height="34">
+                <span class="logo-text">dhanya<span>.org</span></span>
+            </a>
+
+            <div class="nav-right">
+                <button type="button" id="themeToggle" class="theme-toggle-btn" aria-label="Toggle color theme"
+                    title="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button type="button" id="navToggle" class="nav-toggle" aria-label="Toggle navigation menu"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+
+                <nav aria-label="Primary Navigation">
+                    <ul id="navMenu" class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="skills.html" class="active" aria-current="page">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
+                                class="nav-btn">Download CV</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-section" aria-labelledby="skills-heading">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <span class="page-eyebrow">Capabilities</span>
+                        <h1 id="skills-heading" class="page-title">Technical Skills</h1>
+                    </div>
+                    <p class="page-subtitle">Languages, frameworks, databases, and computer science fundamentals.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <article class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h2 class="skill-title">Programming Languages</h2>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </article>
+
+                    <!-- Category 2 -->
+                    <article class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                            </div>
+                            <h2 class="skill-title">Frameworks &amp; Libraries</h2>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </article>
+
+                    <!-- Category 3 -->
+                    <article class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                </svg>
+                            </div>
+                            <h2 class="skill-title">Web Technologies &amp; Databases</h2>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">DBMS</span>
+                        </div>
+                    </article>
+
+                    <!-- Category 4 -->
+                    <article class="card skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="18" cy="18" r="3"></circle>
+                                    <circle cx="6" cy="6" r="3"></circle>
+                                    <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                                    <line x1="6" y1="9" x2="6" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h2 class="skill-title">Tools &amp; Core Concepts</h2>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">Data Structures and Algorithms</span>
+                            <span class="skill-tag">AI/ML Fundamentals</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="Assets/javascript/common.js" defer></script>
+</body>
+
+</html>

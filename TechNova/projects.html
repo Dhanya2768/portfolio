@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Dhanya Biju — dhanya.org</title>
+    <meta name="description"
+        content="Web development projects by Dhanya Biju: AI-Based Pharmacy Management System, Real Estate Website, and Online Hotel Management System.">
+    <meta property="og:title" content="Projects | Dhanya Biju">
+    <meta property="og:description"
+        content="Three database-driven web applications built with PHP, MySQL, Python, Django, HTML, CSS, and JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="dhanya.org">
+    <link rel="icon" type="image/svg+xml" href="Assets/image/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/common.css">
+    <link rel="stylesheet" href="Assets/css/project.css">
+    <script>
+        (function () {
+            var theme = localStorage.getItem('portfolio-theme');
+            if (!theme) {
+                theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo" aria-label="dhanya.org home">
+                <img src="Assets/image/logo.svg" alt="dhanya.org logo" class="logo-icon" width="34" height="34">
+                <span class="logo-text">dhanya<span>.org</span></span>
+            </a>
+
+            <div class="nav-right">
+                <button type="button" id="themeToggle" class="theme-toggle-btn" aria-label="Toggle color theme"
+                    title="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button type="button" id="navToggle" class="nav-toggle" aria-label="Toggle navigation menu"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+
+                <nav aria-label="Primary Navigation">
+                    <ul id="navMenu" class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
+                                class="nav-btn">Download CV</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <span class="page-eyebrow">Selected Work</span>
+                        <h1 id="projects-heading" class="page-title">Projects</h1>
+                    </div>
+                    <p class="page-subtitle">Database-driven web applications built across academic and personal
+                        coursework.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="card project-card">
+                        <div class="project-preview">
+                            <img src="Assets/image/project-pharmacy.svg"
+                                alt="AI-Based Pharmacy Management System preview" width="640" height="340"
+                                loading="eager">
+                        </div>
+                        <h2 class="project-title">AI-Based Pharmacy Management System</h2>
+                        <p class="project-desc">
+                            Web-based pharmacy platform for medicines, inventory, billing, suppliers, and staff with an
+                            AI Smart Pricing module.
+                        </p>
+                        <div class="tag-list">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Smart Pricing AI</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="contacts.html?project=AI-Based%20Pharmacy%20Management%20System"
+                                class="btn btn-outline">Project Inquiry →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="card project-card">
+                        <div class="project-preview">
+                            <img src="Assets/image/project-realestate.svg" alt="Real Estate Website preview" width="640"
+                                height="340" loading="eager">
+                        </div>
+                        <h2 class="project-title">Real Estate Website</h2>
+                        <p class="project-desc">
+                            Django property listing platform with search, filtering, inquiry management, and an
+                            administrative panel.
+                        </p>
+                        <div class="tag-list">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="contacts.html?project=Real%20Estate%20Website" class="btn btn-outline">Project
+                                Inquiry →</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="card project-card">
+                        <div class="project-preview">
+                            <img src="Assets/image/project-hotel.svg" alt="Online Hotel Management System preview"
+                                width="640" height="340" loading="eager">
+                        </div>
+                        <h2 class="project-title">Online Hotel Management System</h2>
+                        <p class="project-desc">
+                            Web application streamlining hotel reservations, customer records, and operations via a
+                            PHP/MySQL admin panel.
+                        </p>
+                        <div class="tag-list">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="contacts.html?project=Online%20Hotel%20Management%20System"
+                                class="btn btn-outline">Project Inquiry →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="Assets/javascript/common.js" defer></script>
+</body>
+
+</html>

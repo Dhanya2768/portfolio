@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-label="Real Estate Website interface preview">
+  <rect width="640" height="340" rx="14" fill="#F7F5FF" />
+  <rect x="20" y="20" width="600" height="300" rx="12" fill="#FFFFFF" stroke="#EAE5FF" stroke-width="1.5" />
+  <rect x="20" y="20" width="600" height="38" rx="12" fill="#F7F5FF" />
+  <circle cx="42" cy="39" r="4.5" fill="#A78BFA" />
+  <circle cx="58" cy="39" r="4.5" fill="#D4C7FF" />
+  <circle cx="74" cy="39" r="4.5" fill="#EAE5FF" />
+  <!-- Search & Filter Bar -->
+  <rect x="38" y="72" width="564" height="44" rx="9" fill="#F7F5FF" stroke="#EAE5FF" />
+  <rect x="52" y="84" width="196" height="20" rx="6" fill="#FFFFFF" stroke="#EAE5FF" />
+  <rect x="260" y="84" width="110" height="20" rx="6" fill="#FFFFFF" stroke="#EAE5FF" />
+  <rect x="382" y="84" width="110" height="20" rx="6" fill="#FFFFFF" stroke="#EAE5FF" />
+  <rect x="504" y="84" width="82" height="20" rx="6" fill="#6D4AFF" />
+  <!-- Property Cards -->
+  <g>
+    <rect x="38" y="132" width="176" height="170" rx="9" fill="#F7F5FF" stroke="#EAE5FF" />
+    <rect x="50" y="144" width="152" height="76" rx="7" fill="#FFFFFF" stroke="#EAE5FF" />
+    <path d="M96 196 L126 170 L156 196 V210 H96 Z" fill="none" stroke="#6D4AFF" stroke-width="2.5" stroke-linejoin="round" />
+    <rect x="50" y="232" width="112" height="11" rx="4" fill="#24213A" fill-opacity="0.7" />
+    <rect x="50" y="252" width="84" height="9" rx="4" fill="#74718A" fill-opacity="0.45" />
+    <rect x="50" y="272" width="66" height="16" rx="8" fill="#6D4AFF" fill-opacity="0.16" />
+  </g>
+  <g>
+    <rect x="232" y="132" width="176" height="170" rx="9" fill="#F7F5FF" stroke="#EAE5FF" />
+    <rect x="244" y="144" width="152" height="76" rx="7" fill="#FFFFFF" stroke="#EAE5FF" />
+    <path d="M294 210 V168 H346 V210 M308 180 H316 M324 180 H332 M308 194 H316 M324 194 H332" fill="none" stroke="#6D4AFF" stroke-width="2.2" />
+    <rect x="244" y="232" width="118" height="11" rx="4" fill="#24213A" fill-opacity="0.7" />
+    <rect x="244" y="252" width="90" height="9" rx="4" fill="#74718A" fill-opacity="0.45" />
+    <rect x="244" y="272" width="66" height="16" rx="8" fill="#A78BFA" fill-opacity="0.3" />
+  </g>
+  <g>
+    <rect x="426" y="132" width="176" height="170" rx="9" fill="#F7F5FF" stroke="#EAE5FF" />
+    <rect x="438" y="144" width="152" height="76" rx="7" fill="#FFFFFF" stroke="#EAE5FF" />
+    <path d="M484 196 L514 170 L544 196 V210 H484 Z" fill="none" stroke="#A78BFA" stroke-width="2.5" stroke-linejoin="round" />
+    <rect x="438" y="232" width="108" height="11" rx="4" fill="#24213A" fill-opacity="0.7" />
+    <rect x="438" y="252" width="88" height="9" rx="4" fill="#74718A" fill-opacity="0.45" />
+    <rect x="438" y="272" width="66" height="16" rx="8" fill="#6D4AFF" fill-opacity="0.16" />
+  </g>
+</svg>

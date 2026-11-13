@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Dhanya Biju — dhanya.org</title>
+    <meta name="description"
+        content="About Dhanya Biju — MCA student with a BCA background specializing in database-driven web applications and rule-based AI features.">
+    <meta property="og:title" content="About | Dhanya Biju">
+    <meta property="og:description"
+        content="Academic background, development interests, and core technical expertise of Dhanya Biju.">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="dhanya.org">
+    <link rel="icon" type="image/svg+xml" href="Assets/image/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/common.css">
+    <link rel="stylesheet" href="Assets/css/about.css">
+    <script>
+        (function () {
+            var theme = localStorage.getItem('portfolio-theme');
+            if (!theme) {
+                theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo" aria-label="dhanya.org home">
+                <img src="Assets/image/logo.svg" alt="dhanya.org logo" class="logo-icon" width="34" height="34">
+                <span class="logo-text">dhanya<span>.org</span></span>
+            </a>
+
+            <div class="nav-right">
+                <button type="button" id="themeToggle" class="theme-toggle-btn" aria-label="Toggle color theme"
+                    title="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button type="button" id="navToggle" class="nav-toggle" aria-label="Toggle navigation menu"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+
+                <nav aria-label="Primary Navigation">
+                    <ul id="navMenu" class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                        <li><a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
+                                class="nav-btn">Download CV</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-section" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="page-header">
+                    <div>
+                        <span class="page-eyebrow">Profile</span>
+                        <h1 id="about-heading" class="page-title">About Me</h1>
+                    </div>
+                    <p class="page-subtitle">MCA student focused on clean backend systems, database design, and
+                        practical web software.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left Column: Short Bio + 3 Compact Highlights -->
+                    <article class="card about-card">
+                        <div class="about-bio">
+                            <h2>Building Practical, Database-Driven Web Applications</h2>
+                            <p>
+                                I am <strong>Dhanya Biju</strong>, an MCA student graduating in 2027 at
+                                <strong>Santhigiri College of Computer Sciences, Vazhithala</strong>, with a BCA degree
+                                from <strong>Mar Augusthinose College, Ramapuram</strong>.
+                            </p>
+                            <p>
+                                My development interests center on software development, problem solving, and web
+                                technologies—building structured backends, relational database models, and basic
+                                rule-based AI features while continuously learning new tools.
+                            </p>
+                        </div>
+
+                        <div class="highlights-strip" aria-label="Key expertise highlights">
+                            <div class="highlight-box">
+                                <span class="highlight-label">Web Systems</span>
+                                <span class="highlight-value">Database-Driven Apps</span>
+                            </div>
+                            <div class="highlight-box">
+                                <span class="highlight-label">Smart Logic</span>
+                                <span class="highlight-value">Rule-Based AI Features</span>
+                            </div>
+                            <div class="highlight-box">
+                                <span class="highlight-label">CS Core</span>
+                                <span class="highlight-value">OOP, DBMS &amp; DSA</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Right Column: Short Technical Expertise List -->
+                    <aside class="card about-side">
+                        <h2>Technical Expertise</h2>
+                        <ul class="expertise-list">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Python, Java, C &amp; C++</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>PHP, Laravel &amp; Django</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>MySQL &amp; Relational DBMS</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>HTML5, CSS3, JavaScript &amp; Bootstrap</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>AI/ML Fundamentals, Git &amp; GitHub</span>
+                            </li>
+                        </ul>
+                        <p class="interests-note">
+                            <strong>Location:</strong> Uzhavoor, Kottayam, Kerala
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="Assets/javascript/common.js" defer></script>
+</body>
+
+</html>

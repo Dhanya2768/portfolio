@@ -1,0 +1,136 @@
+/* =========================================
+   ABOUT PAGE — ONE-SCREEN TWO-COLUMN LAYOUT
+   ========================================= */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.about-card {
+    padding: 1.75rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-card h2 {
+    font-size: 1.32rem;
+    margin-bottom: 0.85rem;
+}
+
+.about-bio p {
+    font-size: 0.96rem;
+    line-height: 1.7;
+    margin-bottom: 0.9rem;
+}
+
+.about-bio strong {
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.highlights-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 1.15rem;
+    padding-top: 1.15rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.highlight-box {
+    padding: 0.75rem 0.85rem;
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+}
+
+.highlight-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+    margin-bottom: 0.2rem;
+}
+
+.highlight-value {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--heading);
+}
+
+/* Right Column: Expertise & Interests */
+.about-side {
+    padding: 1.75rem 1.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.about-side h2 {
+    font-size: 1.25rem;
+}
+
+.expertise-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.expertise-list li {
+    padding: 0.62rem 0.85rem;
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+    color: var(--heading);
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.expertise-list svg {
+    width: 16px;
+    height: 16px;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.interests-note {
+    margin-top: auto;
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+    font-size: 0.88rem;
+    color: var(--secondary-text);
+    transition: background-color var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.interests-note strong {
+    color: var(--heading);
+}
+
+@media (max-width: 960px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card,
+    .about-side {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .highlights-strip {
+        grid-template-columns: 1fr;
+    }
+}
