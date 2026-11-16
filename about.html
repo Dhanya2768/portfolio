@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Dhanya Biju — dhanya.org</title>
+    <title>About Me | Dhanya Biju — dhanya.org</title>
     <meta name="description"
-        content="About Dhanya Biju — MCA student with a BCA background specializing in database-driven web applications and rule-based AI features.">
-    <meta property="og:title" content="About | Dhanya Biju">
+        content="Get to know Dhanya Biju — MCA student at Santhigiri College of Computer Sciences, aspiring software developer, technical interests, career goals, and technical knowledge.">
+    <meta property="og:title" content="About Me | Dhanya Biju">
     <meta property="og:description"
-        content="Academic background, development interests, and core technical expertise of Dhanya Biju.">
+        content="A passionate learner exploring technology and building creative solutions. Get to know Dhanya Biju.">
     <meta property="og:type" content="profile">
     <meta property="og:site_name" content="dhanya.org">
+    <meta property="og:image" content="Assets/image/image.jpeg">
     <link rel="icon" type="image/svg+xml" href="Assets/image/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +35,7 @@
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
+    <!-- Sticky Main Navigation -->
     <header class="navbar">
         <div class="nav-inner">
             <a href="index.html" class="logo" aria-label="dhanya.org home">
@@ -87,99 +89,241 @@
     </header>
 
     <main id="main-content">
-        <section class="page-section" aria-labelledby="about-heading">
+        <section class="page-section about-page-section" aria-labelledby="about-heading">
             <div class="container">
-                <div class="page-header">
-                    <div>
-                        <span class="page-eyebrow">Profile</span>
-                        <h1 id="about-heading" class="page-title">About Me</h1>
+
+                <!-- 1. Page Header with Subtle Entrance Animation & Back Home Action -->
+                <div class="about-top-header">
+                    <div class="about-header-meta">
+                        <span class="page-eyebrow neon-badge">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            About Me
+                        </span>
                     </div>
-                    <p class="page-subtitle">MCA student focused on clean backend systems, database design, and
-                        practical web software.</p>
+                    <div class="about-header-actions">
+                        <a href="index.html" class="btn btn-outline back-home-btn"
+                            aria-label="Return to portfolio home page">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                            Back to Home
+                        </a>
+                    </div>
                 </div>
 
-                <div class="about-grid">
-                    <!-- Left Column: Short Bio + 3 Compact Highlights -->
-                    <article class="card about-card">
-                        <div class="about-bio">
-                            <h2>Building Practical, Database-Driven Web Applications</h2>
-                            <p>
-                                I am <strong>Dhanya Biju</strong>, an MCA student graduating in 2027 at
-                                <strong>Santhigiri College of Computer Sciences, Vazhithala</strong>, with a BCA degree
-                                from <strong>Mar Augusthinose College, Ramapuram</strong>.
+                <!-- =========================================
+                     1 & 2. HERO & PROFILE SECTION
+                     ========================================= -->
+                <article class="about-glass-card about-hero-card">
+                    <div class="about-hero-grid">
+                        <div class="about-hero-content">
+                            <h1 id="about-heading" class="about-hero-title">
+                                Get to <span class="gradient-text">Know Me</span>
+                            </h1>
+
+                            <p class="about-hero-subtitle">
+                                "A passionate learner exploring technology and building creative solutions."
                             </p>
-                            <p>
-                                My development interests center on software development, problem solving, and web
-                                technologies—building structured backends, relational database models, and basic
-                                rule-based AI features while continuously learning new tools.
+
+                            <!-- Identity Badges Strip -->
+                            <div class="identity-meta-row" aria-label="Personal Details">
+                                <span class="identity-pill name-pill">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    Dhanya Biju
+                                </span>
+
+                                <span class="identity-pill role-pill">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                    </svg>
+                                    MCA Student | Aspiring Software Developer
+                                </span>
+
+                                <span class="identity-pill location-pill">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    Location: Kottayam, Kerala
+                                </span>
+                            </div>
+
+                            <!-- Short Professional Introduction -->
+                            <p class="about-hero-intro-text">
+                                Welcome to my portfolio! I am an enthusiastic developer passionate about creating
+                                efficient software, learning cutting-edge technologies, and solving real-world
+                                challenges through code.
                             </p>
                         </div>
 
-                        <div class="highlights-strip" aria-label="Key expertise highlights">
-                            <div class="highlight-box">
-                                <span class="highlight-label">Web Systems</span>
-                                <span class="highlight-value">Database-Driven Apps</span>
+                        <!-- Right Side: Rounded Profile Image with Blue-Purple Gradient Border & Glow -->
+                        <div class="about-hero-photo-wrap">
+                            <div class="profile-glow-ring" role="img" aria-label="Profile photograph of Dhanya Biju">
+                                <div class="profile-inner-frame">
+                                    <img src="Assets/image/image.jpeg" alt="Dhanya Biju portrait photograph" width="280"
+                                        height="310" loading="eager" decoding="async">
+                                </div>
+                                <div class="profile-status-badge" aria-hidden="true">
+                                    <span class="status-indicator-dot"></span>
+                                    <span>MCA Candidate '27</span>
+                                </div>
                             </div>
-                            <div class="highlight-box">
-                                <span class="highlight-label">Smart Logic</span>
-                                <span class="highlight-value">Rule-Based AI Features</span>
-                            </div>
-                            <div class="highlight-box">
-                                <span class="highlight-label">CS Core</span>
-                                <span class="highlight-value">OOP, DBMS &amp; DSA</span>
-                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- =========================================
+                     3. ABOUT ME & 5. CAREER GOAL SECTION
+                     ========================================= -->
+                <div class="intro-career-grid">
+                    <!-- 3. About Me Card -->
+                    <article class="about-glass-card intro-card">
+                        <div class="section-card-header">
+                            <span class="section-icon-wrap" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </span>
+                            <h2 class="section-card-title">About Me</h2>
+                        </div>
+
+                        <div class="intro-card-body">
+                            <p>
+                                I am <strong>Dhanya Biju</strong>, an MCA student at <strong>Santhigiri College of
+                                    Computer Sciences, Vazhithala</strong>. I completed my BCA from <strong>Mar
+                                    Augusthinose College, Ramapuram</strong>. I am interested in software development,
+                                web technologies, database management, and learning new technologies. I enjoy developing
+                                practical applications and improving my programming skills.
+                            </p>
                         </div>
                     </article>
 
-                    <!-- Right Column: Short Technical Expertise List -->
-                    <aside class="card about-side">
-                        <h2>Technical Expertise</h2>
-                        <ul class="expertise-list">
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <!-- 5. Career Goal Highlighted Card -->
+                    <aside class="about-glass-card career-card">
+                        <div class="section-card-header">
+                            <span class="career-target-badge" aria-hidden="true">
+                                <!-- Target Icon -->
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </span>
+                            <h2 class="section-card-title">Career Goal</h2>
+                        </div>
+
+                        <div class="career-quote-box">
+                            <p class="career-quote-text">
+                                "My goal is to build a successful career in the IT industry, strengthen my technical
+                                knowledge, improve my programming skills, and develop useful software applications."
+                            </p>
+                        </div>
+
+                        <div class="career-tag-list" aria-label="Career Focus Areas">
+                            <span class="career-tag">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
-                                <span>Python, Java, C &amp; C++</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                IT Industry Growth
+                            </span>
+                            <span class="career-tag">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
-                                <span>PHP, Laravel &amp; Django</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                Programming Skills
+                            </span>
+                            <span class="career-tag">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
-                                <span>MySQL &amp; Relational DBMS</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg>
-                                <span>HTML5, CSS3, JavaScript &amp; Bootstrap</span>
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <polyline points="20 6 9 17 4 12"></polyline>
-                                </svg>
-                                <span>AI/ML Fundamentals, Git &amp; GitHub</span>
-                            </li>
-                        </ul>
-                        <p class="interests-note">
-                            <strong>Location:</strong> Uzhavoor, Kottayam, Kerala
-                        </p>
+                                Useful Software
+                            </span>
+                        </div>
                     </aside>
                 </div>
+
+
+
+
+                <!-- =========================================
+                     6. CALL TO ACTION — LET'S CONNECT
+                     ========================================= -->
+                <section class="about-cta-block" aria-labelledby="cta-heading">
+                    <div class="about-glass-card about-cta-card">
+                        <div class="about-cta-content">
+                            <span class="neon-badge" style="margin-bottom: 0.85rem;">Get in Touch</span>
+                            <h2 id="cta-heading" class="about-cta-title">Let's Connect</h2>
+                            <p class="about-cta-desc">
+                                "I'm always interested in learning, growing, and exploring new opportunities."
+                            </p>
+                            <div class="about-cta-actions">
+                                <a href="projects.html" class="btn btn-primary about-cta-btn">
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    </svg>
+                                    View Projects
+                                </a>
+                                <a href="contacts.html" class="btn btn-outline about-cta-btn">
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    Contact Me
+                                </a>
+                                <a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-outline about-cta-btn">
+                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                    Download Resume
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </section>
     </main>
 
+    <!-- Scroll to Top Button -->
     <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">

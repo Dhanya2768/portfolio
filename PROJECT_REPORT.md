@@ -52,21 +52,22 @@ TechNova/
     ├── css/
     │   ├── common.css                 (11,116 B) Light theme tokens, navbar, buttons, cards, responsive rules
     │   ├── style.css                  (2,334 B)  Home hero split layout & profile frame
-    │   ├── about.css                  (2,592 B)  Two-column About grid & capability cards
+    │   ├── about.css                  (~15 KB)   Dark Neon Glassmorphism theme, profile glow ring, interests, 12 tech tiles & CTA
     │   ├── education.css              (2,999 B)  Vertical timeline & certifications sidebar
     │   ├── certifications.css         (~6.5 KB)  3-column certificate grid, previews & lightbox modal
     │   ├── skill.css                  (1,608 B)  Compact 3×2 / 2-column / 1-column skills grid
-    │   ├── project.css                (~8 KB)    3-col desktop grid, 2×2 Hilltop preview & details modal
-    │   └── contact.css                (4,024 B)  Two-column contact card, form controls & status alerts
+    │   ├── project.css                (~14 KB)   Dark Neon Glassmorphism theme, 2×2 screenshot grids & interactive modal lightbox
+    │   └── contact.css                (~10 KB)   Dark Neon Glassmorphism theme, gradient icon boxes, validated form & social connect
     ├── javascript/
-    │   └── common.js                  (~15 KB)   Theme toggle, nav drawer, scroll control, project & cert modals
+    │   └── common.js                  (~18 KB)   Theme toggle, nav drawer, scroll control, project modal lightbox & cert viewer
     ├── image/
     │   ├── favicon.svg                (746 B)    16×16-ready violet rounded monogram icon
     │   ├── logo.svg                   (866 B)    Primary geometric D monogram SVG
     │   ├── image.jpeg                 (108,882 B) Profile photograph
-    │   ├── college-santhigiri.jpg     (~1 MB)    Santhigiri College of Computer Sciences campus photograph
-    │   ├── college-augusthinose.jpg   (~970 KB)  Mar Augusthinose College campus photograph
-    │   ├── school-ollhss.jpg          (~1.08 MB) O.L.L.H.S.S. Uzhavoor campus photograph
+    │   ├── college-santhigiri.jpg     (~226 KB)  Santhigiri College of Computer Sciences campus photograph
+    │   ├── college-mac-ramapuram.jpg  (~328 KB)  MAC College (Mar Augusthinose College) campus photograph
+    │   ├── school-st-thomas-building.jpg (~275 KB) St. Thomas HSS, Pala school building photograph
+    │   ├── school-st-thomas-campus.jpg (~318 KB) St. Thomas HSS, Pala school campus photograph
     │   ├── cert-nptel.jpg             (258 KB)   Authentic NPTEL & IIT Madras Business English certificate
     │   ├── cert-python.svg            (4.8 KB)   Avodha Python Programming Course certificate vector graphic
     │   ├── cert-talento.svg           (4.7 KB)   Enbridge TALENTO Program workshop certificate vector graphic
@@ -74,6 +75,18 @@ TechNova/
     │   ├── hilltop-seller-dashboard.png (~130 KB) Hilltop Certified Seller Dashboard & inventory
     │   ├── hilltop-buyer-offers.png   (~86 KB)   Hilltop Buyer Purchase Offers & bidding desk
     │   ├── hilltop-buyer-properties.png (~88 KB) Hilltop My Owned Properties & title transfer ledger
+    │   ├── pharmacy-1-landing.jpg     (~94 KB)   AI PharmaCare landing page & B2B SaaS showcase
+    │   ├── pharmacy-2-admin.png       (~123 KB)  PharmaAdmin system administrator dashboard & alerts
+    │   ├── pharmacy-3-dispensary.jpg  (~80 KB)   PharmaCare dispensary & live prescribing POS cart
+    │   ├── pharmacy-4-alert.png       (~123 KB)  Critical low-stock threshold warning & restock modal
+    │   ├── pharmacy-5-broadcast.jpg   (~68 KB)   Hospital procurement & supplier bidding broadcast desk
+    │   ├── pharmacy-6-quotations.png  (~117 KB)  PharmaSupplier incoming demands & quotation submission
+    │   ├── pharmacy-7-supplier-hub.jpg (~73 KB)  PharmaSupplier operations hub & performance metrics
+    │   ├── hotel-1-landing.jpg        (~74 KB)   Hotel Paradise luxury resort landing page & discovery portal
+    │   ├── hotel-2-admin.png          (~84 KB)   Staff administration & reservation oversight dashboard
+    │   ├── hotel-3-booking.jpg        (~58 KB)   Guest suite selection & live availability booking engine
+    │   ├── hotel-4-records.jpg        (~54 KB)   Manage your reservations & guest lookup desk
+    │   ├── portfolio-home.png         (~71 KB)   Personal Developer Portfolio Website homepage screenshot
     │   ├── project-pharmacy.svg       (3,170 B)  AI-Based Pharmacy Management System preview UI
     │   ├── project-realestate.svg     (2,865 B)  Real Estate Website preview UI
     │   └── project-hotel.svg          (3,038 B)  Online Hotel Management System preview UI
@@ -156,32 +169,75 @@ The portfolio features a modern, tech-forward developer color theme with full Li
    - Split two-column desktop hero (`1.2fr` content / `0.85fr` framed profile photo `image.jpeg` capped cleanly for one-screen fit).
    - Features `Portfolio | Class of 2027` badge, **Dhanya Biju** headline, **MCA Student & Aspiring Software Developer** role subtitle, resume-accurate summary, core stack highlights (`Python`, `Java`, `Django`, `Laravel`, `PHP`, `MySQL`, `HTML / CSS / JS`), **Explore Projects** (`projects.html`) and **Download CV** (`Assets/documents/resume.pdf`) CTAs, plus direct LinkedIn (`https://www.linkedin.com/in/dhanya-biju2003`) and email (`mailto:dhanyabiju7007@gmail.com`) pills.
 2. **About (`about.html` + `Assets/css/about.css`)**
-   - Balanced two-column one-screen layout separating **Profile Summary & Technical Interests** (left column: MCA candidate at Santhigiri College of Computer Sciences graduating 2027, BCA foundation, full-stack PHP/Laravel/Python/Django/MySQL focus, and rule-based AI workflow exploration) from **Development Capabilities** (right column: compact capability cards plus quick navigation to Projects/Skills).
+   - Reworked in a premium **Dark Neon Glassmorphism** theme (deep navy `#080D1A` canvas, translucent glass cards with `backdrop-filter: blur(16px)`, electric blue `#00D2FF` and purple `#8B5CF6` gradient accents, white typography, and subtle shadows).
+   - **Hero Section ("Get to Know Me"):** Subtle entrance animation, subtitle *"A passionate learner exploring technology and building creative solutions."*, personal detail pills (**Dhanya Biju**, **MCA Student | Aspiring Software Developer**, **Location: Kottayam, Kerala**), short professional introduction copy, and a professional rounded profile photo with a glowing blue-purple gradient border and ambient light ring. Top actions include a **Back to Home** button.
+   - **About Me:** Direct academic statement detailing MCA studies at Santhigiri College of Computer Sciences, Vazhithala, BCA foundation from Mar Augusthinose College, Ramapuram, development interests in software, web technologies, and database management, and ongoing skills improvement.
+   - **Career Goal:** Highlighted goal card with target bullseye icon, quote banner (*"My goal is to build a successful career in the IT industry, strengthen my technical knowledge, improve my programming skills, and develop useful software applications."*), and career focus tags (*IT Industry Growth, Programming Skills, Useful Software*).
+   - **Technical Interests:** 4 domain cards with vibrant gradient badges:
+     - **Web Development** – Creating responsive, structured, and user-friendly websites with modern web standards.
+     - **Software Development** – Learning programming logic, OOP principles, and building practical software applications.
+     - **Database Management** – Working with MySQL, relational schemas, SQL queries, and efficient data management.
+     - **Artificial Intelligence** – Exploring AI and machine learning concepts, smart algorithms, and intelligent systems.
+   - **Technical Knowledge:** 12 authentic vector-branded tech tiles (*Java, Python, PHP, Laravel, Django, HTML, CSS, JavaScript, Bootstrap, MySQL, Git, GitHub*) plus direct CTA button linking to `skills.html`.
+   - **Personal Highlights:** 3 strength cards with glowing icons (*Quick Learner, Hardworking, Adaptable*).
+   - **Call to Action ("Let's Connect"):** Gradient-accented connect card with 3 action buttons: **View Projects** (`projects.html`), **Contact Me** (`contacts.html`), and **Download Resume** (`Assets/documents/resume.pdf`).
 3. **Education (`education.html` + `Assets/css/education.css`)**
-   - Left column vertical academic timeline with verified dates, labels, and campus photos:
-     - **Master of Computer Applications (MCA)** — Santhigiri College of Computer Sciences, Vazhithala (`2025 – 2027`, `Status: Pursuing`) — includes `college-santhigiri.jpg` photo preview & modal viewer.
-     - **Bachelor of Computer Applications (BCA)** — Mar Augusthinose College, Ramapuram (`2022 – 2025`, `Score: 75%`) — includes `college-augusthinose.jpg` photo preview & modal viewer.
-     - **Higher Secondary Education** — O.L.L.H.S.S. Uzhavoor (`2020 – 2022`, `Score: 80%`) — includes `school-ollhss.jpg` photo preview & modal viewer.
-     - **Secondary School Leaving Certificate (SSLC)** — O.L.L.H.S.S. Uzhavoor (`2019 – 2020`, `Score: 87%`) — includes `school-ollhss.jpg` photo preview & modal viewer.
-   - Right column **Certifications & Workshops**: `TALENTO Program – Enbridge` (`Workshop • 2024`) and `Python Programming Course – Avodha` (`Certification`).
-   - Interactive Lightbox Modal (`#photoModal`) allowing visitors to view high-resolution campus photos, institutional titles, and location captions with keyboard accessibility (`Escape` key, backdrop click, focus management).
+   - Redesigned as **🎓 My Educational Journey** with page subtitle, **Back to Home** navigation button, and horizontal milestone tracker (1. SSLC ➔ 2. Higher Secondary ➔ 3. BCA ➔ 4. MCA).
+   - Premium vertical animated timeline featuring connecting gradient spine and circular graduation/academic SVG nodes with alternating desktop card layout reflowing cleanly to single column on mobile.
+   - Four large, attractive education cards with high-quality rectangular photos (`16:10` aspect ratio), rounded corners, subtle shadows, hover zoom effect (`scale(1.06)`), and photo tag overlays:
+     - **Secondary School Leaving Certificate (SSLC)** — St. Thomas HSS, Pala (`85% Percentage`) — includes `school-st-thomas-building.jpg` large preview & lightbox modal.
+     - **Higher Secondary Education** — St. Thomas HSS, Pala (`80% Percentage`) — includes `school-st-thomas-campus.jpg` large preview & lightbox modal.
+     - **Bachelor of Computer Applications (BCA)** — MAC College, Ramapuram (`75% Percentage`) — includes `college-mac-ramapuram.jpg` large preview & lightbox modal.
+     - **Master of Computer Applications (MCA)** — Santhigiri College of Computer Sciences (`75% Percentage`, editable interactive status badge toggling `Pursuing` / `Completed`) — includes `college-santhigiri.jpg` large preview & lightbox modal.
+   - Interactive Lightbox Modal (`#photoModal`) allowing visitors to view high-resolution campus and building photos with keyboard accessibility (`Escape` key, backdrop click, focus management).
 4. **Skills (`skills.html` + `Assets/css/skill.css`)**
-   - Six clean, categorized skill cards (`3×2` desktop grid, `2`-column tablet, `1`-column mobile) without fabricated skill-bar percentages:
-     - **Programming Languages:** `Python`, `Java`, `C`, `C++`
-     - **Web Technologies:** `HTML`, `CSS`, `JavaScript`, `PHP`
-     - **Frameworks & Libraries:** `Django`, `Laravel`, `Bootstrap`
-     - **Databases & Tools:** `MySQL`, `Git`, `GitHub`
-     - **AI & Emerging Tech:** `AI/ML Fundamentals`
-     - **Core CS Concepts:** `OOP`, `DBMS`, `Data Structures & Algorithms`
+   - Redesigned as **My Technical Skills** with page subtitle, **Back to Home** button, **Download Resume** button (`Assets/documents/resume.pdf`), and a 4-domain metrics overview strip (03 Programming Languages, 04 Web Technologies, 02 Frameworks, 06 Databases & Tools).
+   - **Programming Languages:** 3 individual skill cards with official vector brand icons, proficiency level badges, and detailed descriptions:
+     - **Java** (`Beginner`): OOP concepts, classes, objects, inheritance, and basic application development.
+     - **Python** (`Beginner`): Core syntax, variables, functions, loops, conditions, and programming logic.
+     - **PHP** (`Intermediate`): Server-side programming, form handling, session authentication, and dynamic web development.
+   - **Web Development Skills:** 4 cards detailing HTML5 (semantic structuring), CSS3 (modern layouts & responsive styling), JavaScript (DOM scripting & events), and Bootstrap (responsive grid & UI components).
+   - **Frameworks:** 2 framework cards highlighting Laravel (PHP MVC & Eloquent ORM) and Django (Python MTV & Admin panel).
+   - **Database Skills:** Dedicated MySQL feature card detailing database creation, tables, SQL queries, CRUD operations, joins, and management.
+   - **Tools & Technologies:** 5-column ecosystem grid featuring Git (version control), GitHub (cloud repositories), VS Code (code editor), XAMPP (local server stack), and Linux (CLI & OS environment).
+   - Applied Development CTA card inviting visitors to explore projects and get in touch.
 5. **Projects (`projects.html` + `Assets/css/project.css`)**
-   - Equal-height 3-column card grid on desktop, 2-column grid on tablet (`≤ 1024px`), and single-column stack on mobile (`≤ 680px`):
-     - **AI-Based Pharmacy Management System** (`project-pharmacy.svg`) — Tags: `PHP`, `MySQL`, `Smart Pricing AI` — Interactive Details modal with algorithmic pricing & inventory specs + Inquiry CTA.
-     - **Real Estate Website (Hilltop)** — Featuring a **2×2 Small Grid Screenshot Preview** directly on the card displaying 4 authentic system screenshots (`hilltop-home.jpg`, `hilltop-seller-dashboard.png`, `hilltop-buyer-offers.png`, `hilltop-buyer-properties.png`), a "4 Screens • Click to Inspect" badge, and an interactive **Project Details Lightbox Modal** with tabbed screenshot switcher, keyboard navigation (`←`/`→`/`Esc`), and comprehensive screen-by-screen feature breakdowns (Landing & Discovery, Certified Seller Dashboard, Buyer Offers & Bidding, Owned Properties & Title Transfers) — Tags: `Python`, `Django`, `MySQL` — Inquiry CTA pre-fills subject.
-     - **Online Hotel Management System** (`project-hotel.svg`) — Tags: `HTML`, `CSS`, `JavaScript`, `PHP`, `MySQL` — Interactive Details modal with room booking & guest management specs + Inquiry CTA.
-   - Zero nonfunctional `#` links or invented GitHub/live deployment URLs.
+   - Reworked in a premium **Dark Neon Glassmorphism** theme (deep navy `#060B18` canvas, translucent glass cards with `backdrop-filter: blur(16px)`, electric blue `#00D2FF` and purple `#8B5CF6` glowing borders, neon eyebrow badges, and high-contrast typography).
+   - **Page Header:** Small eyebrow heading `SELECTED WORK`, main title `My Projects`, subtitle `"Explore my academic and personal projects, where ideas turn into practical applications."`, and a **Back to Home** button.
+   - **Project 1: AI-Based Pharmacy Management System**
+     - Description: *"An intelligent pharmacy management platform with medicine inventory management, smart pricing, low-stock alerts, supplier quotations, and medicine procurement."*
+     - Technologies: `PHP`, `MySQL`, `Smart Pricing AI`, `B2B Procurement`.
+     - Features displayed on card & modal: `Admin Dashboard`, `Pharmacist Dashboard`, `Supplier Management`, `Medicine Inventory`, `Smart Pricing`, `Stock Alerts`, `Supplier Price Comparison`, `Purchase Management`.
+     - **2×2 Small Grid Screenshot Preview:** `pharmacy-1-landing.jpg`, `pharmacy-2-admin.png`, `pharmacy-3-dispensary.jpg`, `pharmacy-4-alert.png`.
+   - **Project 2: Real Estate Website (Hilltop)**
+     - Description: *"A Django-based property listing and digital property transfer platform with buyer and seller management, property inspection, and purchase offers."*
+     - Technologies: `Python`, `Django`, `MySQL`.
+     - Features displayed on card & modal: `Property Listings`, `Buyer Dashboard`, `Seller Dashboard`, `Property Details`, `Purchase Offers`, `Property Transfers`.
+     - **2×2 Small Grid Screenshot Preview:** `hilltop-home.jpg`, `hilltop-seller-dashboard.png`, `hilltop-buyer-offers.png`, `hilltop-buyer-properties.png`.
+   - **Project 3: Online Hotel Management System (Hotel Paradise)**
+     - Description: *"A web-based hotel management application designed to manage hotel reservations, customer records, and administrative operations."*
+     - Technologies: `HTML`, `CSS`, `JavaScript`, `PHP`, `MySQL`.
+     - Features displayed on card & modal: `Hotel Management`, `Reservation Management`, `Customer Records`, `Admin Panel`.
+     - **2×2 Small Grid Screenshot Preview:** `hotel-1-landing.jpg`, `hotel-2-admin.png`, `hotel-3-booking.jpg`, `hotel-4-records.jpg`.
+     - **Interactive 4-Screen Modal Lightbox:** Detailed view featuring Hotel Paradise Landing & Resort Showcase, Staff Administration & Reservation Oversight, Guest Suite Selection & Booking Engine, and Manage Reservations & Guest Lookup Desk.
+   - **Project 4: Personal Developer Portfolio Website (dhanyaorg.netlify.app)**
+     - Description: *"A modern, responsive personal developer portfolio website designed to showcase my profile, educational background, technical skills, certifications, and development projects. It helps visitors explore my work, view my resume, and connect with me."*
+     - Technologies: `HTML5`, `CSS3`, `JavaScript`.
+     - Features displayed on card & modal: `Personal Homepage`, `About Me`, `Education Timeline`, `Certifications`, `Technical Skills`, `Projects Showcase`, `Contact Form`, `Theme Toggle`.
+     - **Browser Mockup Preview:** Clean browser window frame with mac-style traffic dots, `https://dhanyaorg.netlify.app` address bar with lock icon, subtle blue-purple glowing borders, and authentic screenshot `portfolio-home.png`.
+     - **Action Buttons & Modal:** Direct `Visit Portfolio ↗` button opening `https://dhanyaorg.netlify.app` in a new tab, `View Details` modal trigger with full capabilities list, architecture notes, and modal `Visit Portfolio` CTA bound to `https://dhanyaorg.netlify.app`.
+   - **Project Details Lightbox Modal (`#projectModal`):**
+     - Opens a large modern popup with previous/next screenshot navigation (`←`/`→` arrows & keys), clickable thumbnail gallery, screenshot title, description counter, key capabilities/features list, architecture technologies badges, project inquiry CTA pre-filling `contacts.html?project=...`, and accessible close controls (`Esc`, backdrop click, close button).
 6. **Contact (`contacts.html` + `Assets/css/contact.css`)**
-   - Two-column layout pairing direct contact channels (`dhanyabiju7007@gmail.com`, `https://www.linkedin.com/in/dhanya-biju2003`, `Uzhavoor, Kottayam, Kerala`, and CV download button) with a client-side validated message form. Phone number was excluded per user privacy instruction.
-   - Transparently communicates that submitting opens the visitor's default email client (`mailto:dhanyabiju7007@gmail.com`) with pre-filled details because there is no server-side mail backend.
+   - Redesigned in a modern **Dark Neon Glassmorphism** theme (deep navy `#080D1A` canvas, electric blue `#3B82F6` and purple `#8B5CF6` gradient accents, white and light grey typography, and subtle blur).
+   - **Page Header:** Small eyebrow text `GET IN TOUCH`, main title `Let's Connect`, subtitle `"Have an opportunity, project idea, or collaboration in mind? I'd love to hear from you."`, and a **Back to Home** button with entrance animations.
+   - **Contact Information Section:** Glassmorphism card titled **Contact Information** featuring blue and purple gradient icon backgrounds:
+     - **Email:** `dhanyabiju7007@gmail.com` (clickable `mailto:`)
+     - **LinkedIn:** `linkedin.com/in/dhanya-biju2003` (clickable target `_blank`)
+     - **Location:** `Uzhavoor, Kottayam, Kerala`
+     - **Resume:** `Download CV (PDF)` (clickable `Assets/documents/resume.pdf`)
+   - **Social Connection Section:** Dedicated social connection area featuring branded pills for LinkedIn and Email with hover glow.
+   - **Contact Form ("Send Me a Message"):** Modern form card with Full Name, Email Address, Subject (with auto-fill support from project cards), and Message fields, required-field indicators, field-level error validation (`#nameError`, `#emailError`, `#subjectError`, `#messageError`), gradient **Send Message** button with paper airplane icon, and transparent note explaining that submission opens the visitor's local mail client via `mailto:dhanyabiju7007@gmail.com` with pre-filled inputs.
 
 ---
 

@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Dhanya Biju — dhanya.org</title>
     <meta name="description"
-        content="Contact Dhanya Biju by email, LinkedIn, or the validated contact form for software development internships and projects.">
+        content="Get in touch with Dhanya Biju — MCA student and aspiring software developer. Connect via email, LinkedIn, or send a validated message.">
     <meta property="og:title" content="Contact | Dhanya Biju">
-    <meta property="og:description" content="Connect with Dhanya Biju via email, LinkedIn, or resume download.">
+    <meta property="og:description"
+        content="Have an opportunity, project idea, or collaboration in mind? Let's connect.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="dhanya.org">
+    <meta property="og:image" content="Assets/image/image.jpeg">
     <link rel="icon" type="image/svg+xml" href="Assets/image/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +35,7 @@
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
+    <!-- Sticky Main Navigation -->
     <header class="navbar">
         <div class="nav-inner">
             <a href="index.html" class="logo" aria-label="dhanya.org home">
@@ -86,89 +89,168 @@
     </header>
 
     <main id="main-content">
-        <section class="page-section" aria-labelledby="contact-heading">
+        <section class="page-section contacts-section" aria-labelledby="contact-heading">
             <div class="container">
-                <div class="page-header">
-                    <div>
-                        <span class="page-eyebrow">Reach Out</span>
-                        <h1 id="contact-heading" class="page-title">Contact</h1>
+
+                <!-- 1. Page Header with Subtle Entrance Animation & Back Home Action -->
+                <div class="contacts-top-header">
+                    <div class="contacts-header-text">
+                        <span class="page-eyebrow neon-badge">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            GET IN TOUCH
+                        </span>
+                        <h1 id="contact-heading" class="page-title">
+                            Let's <span class="gradient-text">Connect</span>
+                        </h1>
+                        <p class="page-subtitle">
+                            "Have an opportunity, project idea, or collaboration in mind? I'd love to hear from you."
+                        </p>
                     </div>
-                    <p class="page-subtitle">Open to software development internships, projects, and technical
-                        collaborations.</p>
+
+                    <div class="contacts-header-actions">
+                        <a href="index.html" class="btn btn-outline back-home-btn"
+                            aria-label="Return to portfolio home page">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                            Back to Home
+                        </a>
+                    </div>
                 </div>
 
+                <!-- =========================================
+                     TWO-COLUMN LAYOUT: CONTACT INFO + FORM
+                     ========================================= -->
                 <div class="contact-grid">
-                    <!-- Left Column -->
-                    <aside class="card contact-info-card">
-                        <h2>Let's Connect</h2>
-                        <p class="info-intro">Feel free to get in touch using any of the links below.</p>
 
-                        <div class="contact-items">
-                            <a href="mailto:dhanyabiju7007@gmail.com" class="contact-item">
-                                <div class="item-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    <!-- 2. Contact Information Section (Left Column) -->
+                    <aside class="contact-glass-card contact-info-card">
+                        <div>
+                            <div class="card-header-row">
+                                <span class="card-header-icon" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                     </svg>
-                                </div>
-                                <div class="item-text">
-                                    <span class="item-label">Email</span>
-                                    <span class="item-value">dhanyabiju7007@gmail.com</span>
-                                </div>
-                            </a>
+                                </span>
+                                <h2 class="card-title">Contact Information</h2>
+                            </div>
+                            <p class="info-intro">Feel free to reach out directly through any of the channels below.</p>
 
-                            <a href="https://www.linkedin.com/in/dhanya-biju2003" target="_blank"
-                                rel="noopener noreferrer" class="contact-item">
-                                <div class="item-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                            <!-- Contact Channels with Blue & Purple Gradient Icons -->
+                            <div class="contact-items" role="list">
+                                <!-- Email -->
+                                <a href="mailto:dhanyabiju7007@gmail.com" class="contact-item" role="listitem"
+                                    aria-label="Send email to dhanyabiju7007@gmail.com">
+                                    <div class="item-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="item-text">
+                                        <span class="item-label">Email</span>
+                                        <span class="item-value">dhanyabiju7007@gmail.com</span>
+                                    </div>
+                                </a>
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/dhanya-biju2003" target="_blank"
+                                    rel="noopener noreferrer" class="contact-item" role="listitem"
+                                    aria-label="Visit Dhanya Biju's LinkedIn profile">
+                                    <div class="item-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="item-text">
+                                        <span class="item-label">LinkedIn</span>
+                                        <span class="item-value">linkedin.com/in/dhanya-biju2003</span>
+                                    </div>
+                                </a>
+
+                                <!-- Location -->
+                                <div class="contact-item" role="listitem">
+                                    <div class="item-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="item-text">
+                                        <span class="item-label">Location</span>
+                                        <span class="item-value">Uzhavoor, Kottayam, Kerala</span>
+                                    </div>
+                                </div>
+
+                                <!-- Resume -->
+                                <a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
+                                    class="contact-item" role="listitem" aria-label="Download curriculum vitae PDF">
+                                    <div class="item-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="item-text">
+                                        <span class="item-label">Resume</span>
+                                        <span class="item-value">Download CV (PDF)</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 4. Social Connection Section -->
+                        <div class="social-connection-block">
+                            <h3 class="social-title">Social Connection</h3>
+                            <div class="social-links-row">
+                                <a href="https://www.linkedin.com/in/dhanya-biju2003" target="_blank"
+                                    rel="noopener noreferrer" class="social-btn" aria-label="Connect on LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                         <path
                                             d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
                                         </path>
                                     </svg>
-                                </div>
-                                <div class="item-text">
-                                    <span class="item-label">LinkedIn</span>
-                                    <span class="item-value">linkedin.com/in/dhanya-biju2003</span>
-                                </div>
-                            </a>
-
-                            <div class="contact-item">
-                                <div class="item-icon" aria-hidden="true">
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="mailto:dhanyabiju7007@gmail.com" class="social-btn"
+                                    aria-label="Send an email to dhanyabiju7007@gmail.com">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                                     </svg>
-                                </div>
-                                <div class="item-text">
-                                    <span class="item-label">Location</span>
-                                    <span class="item-value">Uzhavoor, Kottayam, Kerala</span>
-                                </div>
+                                    <span>Email</span>
+                                </a>
                             </div>
-
-                            <a href="Assets/documents/resume.pdf" target="_blank" rel="noopener noreferrer"
-                                class="contact-item">
-                                <div class="item-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                        <polyline points="14 2 14 8 20 8"></polyline>
-                                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                                    </svg>
-                                </div>
-                                <div class="item-text">
-                                    <span class="item-label">Resume</span>
-                                    <span class="item-value">Download CV (PDF)</span>
-                                </div>
-                            </a>
                         </div>
                     </aside>
 
-                    <!-- Right Column: Validated Form -->
-                    <div class="card contact-form-card">
-                        <h2>Send a Message</h2>
+                    <!-- 3. Contact Form (Right Column) -->
+                    <div class="contact-glass-card contact-form-card">
+                        <div class="card-header-row">
+                            <span class="card-header-icon" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                            </span>
+                            <h2 class="card-title">Send Me a Message</h2>
+                        </div>
+
                         <p class="form-note">
                             Submitting validates your message and opens your email application via <code>mailto:</code>
                             addressed to <strong>dhanyabiju7007@gmail.com</strong> (no backend server stores messages).
@@ -176,37 +258,53 @@
 
                         <form id="contactForm" class="contact-form" novalidate>
                             <div class="form-row">
+                                <!-- Full Name -->
                                 <div class="form-group">
-                                    <label for="senderName">Name</label>
-                                    <input type="text" id="senderName" name="name" placeholder="Your name"
-                                        autocomplete="name" required>
+                                    <label for="senderName">
+                                        Full Name <span class="required-star" aria-hidden="true">*</span>
+                                    </label>
+                                    <input type="text" id="senderName" name="name" placeholder="e.g. Alex Morgan"
+                                        autocomplete="name" required aria-describedby="nameError">
                                     <span id="nameError" class="field-error" aria-live="polite"></span>
                                 </div>
+
+                                <!-- Email Address -->
                                 <div class="form-group">
-                                    <label for="senderEmail">Email</label>
-                                    <input type="email" id="senderEmail" name="email" placeholder="you@example.com"
-                                        autocomplete="email" required>
+                                    <label for="senderEmail">
+                                        Email Address <span class="required-star" aria-hidden="true">*</span>
+                                    </label>
+                                    <input type="email" id="senderEmail" name="email" placeholder="e.g. alex@example.com"
+                                        autocomplete="email" required aria-describedby="emailError">
                                     <span id="emailError" class="field-error" aria-live="polite"></span>
                                 </div>
                             </div>
 
+                            <!-- Subject -->
                             <div class="form-group">
-                                <label for="subject">Subject</label>
+                                <label for="subject">
+                                    Subject <span class="required-star" aria-hidden="true">*</span>
+                                </label>
                                 <input type="text" id="subject" name="subject"
-                                    placeholder="Project inquiry or opportunity" required>
+                                    placeholder="e.g. Software Development Opportunity" required
+                                    aria-describedby="subjectError">
                                 <span id="subjectError" class="field-error" aria-live="polite"></span>
                             </div>
 
+                            <!-- Message -->
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="3" placeholder="Write your message..."
-                                    required></textarea>
+                                <label for="message">
+                                    Message <span class="required-star" aria-hidden="true">*</span>
+                                </label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Write your message here..." required
+                                    aria-describedby="messageError"></textarea>
                                 <span id="messageError" class="field-error" aria-live="polite"></span>
                             </div>
 
+                            <!-- Actions & Status Feedback -->
                             <div class="form-actions">
-                                <button type="submit" class="btn btn-primary submit-btn">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                <button type="submit" class="submit-btn" id="submitBtn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                         <line x1="22" y1="2" x2="11" y2="13"></line>
                                         <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -217,11 +315,14 @@
                             </div>
                         </form>
                     </div>
+
                 </div>
+
             </div>
         </section>
     </main>
 
+    <!-- Scroll to Top Button -->
     <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
