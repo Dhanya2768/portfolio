@@ -877,11 +877,13 @@
         }
 
         // Attach event listeners to project trigger buttons and grid tiles
-        document.querySelectorAll('.project-details-btn, .preview-grid-tile').forEach(function (btn) {
-            btn.addEventListener('click', function () {
+        var projectTriggers = document.querySelectorAll('.project-details-btn, .project-preview-btn, .preview-grid-tile, .preview-single-tile, .preview-browser-tile, [data-project]');
+        projectTriggers.forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
                 var projectKey = btn.getAttribute('data-project');
-                var screenIdx = parseInt(btn.getAttribute('data-screen-index'), 10) || 0;
-                if (projectKey) {
+                if (projectKey && PROJECT_DATA[projectKey]) {
+                    e.preventDefault();
+                    var screenIdx = parseInt(btn.getAttribute('data-screen-index'), 10) || 0;
                     openProjectModal(projectKey, screenIdx, btn);
                 }
             });

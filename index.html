@@ -767,72 +767,148 @@
                         coursework.</p>
                 </div>
 
+                <!-- 3 Grid in One Row (Compact Previews with Lightbox Click) -->
                 <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <article class="card project-card">
-                        <div class="project-preview">
-                            <img src="Assets/image/project-pharmacy.svg"
-                                alt="AI-Based Pharmacy Management System preview" width="640" height="340"
-                                loading="lazy">
+                    <!-- Project 1: AI Pharmacy -->
+                    <article class="card project-card glass-card">
+                        <button type="button" class="project-preview-btn project-details-btn"
+                            data-project="pharmacy" data-screen-index="0"
+                            aria-label="Inspect AI-Based Pharmacy Management System screenshots in detail">
+                            <div class="project-preview-wrap">
+                                <img src="Assets/image/pharmacy-1-landing.jpg"
+                                    alt="AI-Based Pharmacy Management System dashboard and portal" width="400"
+                                    height="135" loading="lazy">
+                                <span class="project-preview-zoom" aria-hidden="true">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="7"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    Enlarge 🔍
+                                </span>
+                            </div>
+                        </button>
+                        <div class="project-card-top">
+                            <span class="project-pill">Healthcare SaaS</span>
                         </div>
                         <h3 class="project-title">AI-Based Pharmacy Management System</h3>
                         <p class="project-desc">
                             Web-based pharmacy platform for medicines, inventory, billing, suppliers, and staff with an
                             AI Smart Pricing module.
                         </p>
-                        <div class="tag-list">
-                            <span class="tag">PHP</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Smart Pricing AI</span>
+                        <div class="tag-list" aria-label="Technologies used">
+                            <span class="tag tag--tech">PHP</span>
+                            <span class="tag tag--tech">MySQL</span>
+                            <span class="tag tag--tech">Smart Pricing AI</span>
                         </div>
                         <div class="project-actions">
-                            <a href="#contact" class="btn btn-outline"
-                                data-inquiry-project="AI-Based Pharmacy Management System">Project Inquiry →</a>
+                            <button type="button" class="btn btn-secondary project-details-btn"
+                                data-project="pharmacy" data-screen-index="0">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="11" cy="11" r="7"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                <span>View Details</span>
+                            </button>
+                            <a href="contacts.html?project=AI-Based%20Pharmacy%20Management%20System"
+                                class="btn btn-outline"
+                                data-inquiry-project="AI-Based Pharmacy Management System">Inquire →</a>
                         </div>
                     </article>
 
-                    <!-- Project 2 -->
-                    <article class="card project-card">
-                        <div class="project-preview">
-                            <img src="Assets/image/project-realestate.svg" alt="Real Estate Website preview" width="640"
-                                height="340" loading="lazy">
+                    <!-- Project 2: Real Estate -->
+                    <article class="card project-card glass-card">
+                        <button type="button" class="project-preview-btn project-details-btn"
+                            data-project="real-estate" data-screen-index="0"
+                            aria-label="Inspect Real Estate Website screenshots in detail">
+                            <div class="project-preview-wrap">
+                                <img src="Assets/image/hilltop-home.jpg"
+                                    alt="Hilltop Real Estate property discovery portal" width="400"
+                                    height="135" loading="lazy">
+                                <span class="project-preview-zoom" aria-hidden="true">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="7"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    Enlarge 🔍
+                                </span>
+                            </div>
+                        </button>
+                        <div class="project-card-top">
+                            <span class="project-pill">Django Platform</span>
                         </div>
-                        <h3 class="project-title">Real Estate Website</h3>
+                        <h3 class="project-title">Real Estate Website (Hilltop)</h3>
                         <p class="project-desc">
                             Django property listing platform with search, filtering, inquiry management, and an
                             administrative panel.
                         </p>
-                        <div class="tag-list">
-                            <span class="tag">Python</span>
-                            <span class="tag">Django</span>
-                            <span class="tag">MySQL</span>
+                        <div class="tag-list" aria-label="Technologies used">
+                            <span class="tag tag--tech">Python</span>
+                            <span class="tag tag--tech">Django</span>
+                            <span class="tag tag--tech">MySQL</span>
                         </div>
                         <div class="project-actions">
-                            <a href="#contact" class="btn btn-outline"
-                                data-inquiry-project="Real Estate Website">Project Inquiry →</a>
+                            <button type="button" class="btn btn-secondary project-details-btn"
+                                data-project="real-estate" data-screen-index="0">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="11" cy="11" r="7"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                <span>View Details</span>
+                            </button>
+                            <a href="contacts.html?project=Real%20Estate%20Website" class="btn btn-outline"
+                                data-inquiry-project="Real Estate Website">Inquire →</a>
                         </div>
                     </article>
 
-                    <!-- Project 3 -->
-                    <article class="card project-card">
-                        <div class="project-preview">
-                            <img src="Assets/image/project-hotel.svg" alt="Online Hotel Management System preview"
-                                width="640" height="340" loading="lazy">
+                    <!-- Project 3: Online Hotel Management -->
+                    <article class="card project-card glass-card">
+                        <button type="button" class="project-preview-btn project-details-btn"
+                            data-project="hotel" data-screen-index="0"
+                            aria-label="Inspect Online Hotel Management System screenshots in detail">
+                            <div class="project-preview-wrap">
+                                <img src="Assets/image/hotel-1-landing.jpg"
+                                    alt="Hotel Paradise luxury resort reservation portal" width="400"
+                                    height="135" loading="lazy">
+                                <span class="project-preview-zoom" aria-hidden="true">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="7"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                    Enlarge 🔍
+                                </span>
+                            </div>
+                        </button>
+                        <div class="project-card-top">
+                            <span class="project-pill">Hospitality Web App</span>
                         </div>
                         <h3 class="project-title">Online Hotel Management System</h3>
                         <p class="project-desc">
                             Web application streamlining hotel reservations, customer records, and operations via a
                             PHP/MySQL admin panel.
                         </p>
-                        <div class="tag-list">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">PHP</span>
-                            <span class="tag">MySQL</span>
+                        <div class="tag-list" aria-label="Technologies used">
+                            <span class="tag tag--tech">HTML/CSS</span>
+                            <span class="tag tag--tech">JavaScript</span>
+                            <span class="tag tag--tech">PHP</span>
+                            <span class="tag tag--tech">MySQL</span>
                         </div>
                         <div class="project-actions">
-                            <a href="#contact" class="btn btn-outline"
-                                data-inquiry-project="Online Hotel Management System">Project Inquiry →</a>
+                            <button type="button" class="btn btn-secondary project-details-btn"
+                                data-project="hotel" data-screen-index="0">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <circle cx="11" cy="11" r="7"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                                <span>View Details</span>
+                            </button>
+                            <a href="contacts.html?project=Online%20Hotel%20Management%20System" class="btn btn-outline"
+                                data-inquiry-project="Online Hotel Management System">Inquire →</a>
                         </div>
                     </article>
                 </div>
@@ -1041,6 +1117,86 @@
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
     </button>
+
+    <!-- =========================================
+         PROJECT DETAILS & SCREENSHOT LIGHTBOX MODAL
+         ========================================= -->
+    <div id="projectModal" class="project-modal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle"
+        aria-hidden="true">
+        <div class="project-modal-backdrop" aria-hidden="true"></div>
+        <div class="project-modal-dialog">
+            <div class="project-modal-header">
+                <div class="project-modal-header-info">
+                    <span id="projectModalCategory" class="project-modal-badge">Featured Project</span>
+                    <h2 id="projectModalTitle" class="project-modal-title">Project Details</h2>
+                </div>
+                <button type="button" id="projectModalClose" class="project-modal-close"
+                    aria-label="Close project details">&times;</button>
+            </div>
+            <div class="project-modal-body">
+                <!-- Screenshot / Media Viewer -->
+                <div class="project-modal-viewer">
+                    <div class="project-modal-screen-wrap">
+                        <img id="projectModalImg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E"
+                            alt="Project screenshot view" width="900" height="500">
+                        <button type="button" id="projectNavPrev" class="project-nav-btn project-nav-prev"
+                            aria-label="Previous screenshot">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button type="button" id="projectNavNext" class="project-nav-btn project-nav-next"
+                            aria-label="Next screenshot">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Dynamic screen selection thumbnails strip -->
+                    <div id="projectThumbs" class="project-thumbs-strip" role="tablist"
+                        aria-label="Screenshots Gallery"></div>
+                </div>
+
+                <!-- Detailed Project Information -->
+                <div class="project-modal-info">
+                    <div class="project-modal-screen-title-row">
+                        <h3 id="projectScreenTitle" class="project-screen-title">Module Overview</h3>
+                        <span id="projectScreenCounter" class="project-screen-counter">1 of 1</span>
+                    </div>
+                    <p id="projectScreenDesc" class="project-screen-desc"></p>
+
+                    <div class="project-modal-section">
+                        <h4 class="project-section-heading">Key Capabilities &amp; Features</h4>
+                        <ul id="projectKeyFeatures" class="project-features-list"></ul>
+                    </div>
+
+                    <div class="project-modal-section">
+                        <h4 class="project-section-heading">Architecture &amp; Technologies</h4>
+                        <div id="projectTechTags" class="tag-list"></div>
+                        <p id="projectArchNotes" class="project-arch-notes"></p>
+                    </div>
+
+                    <div class="project-modal-footer">
+                        <a id="projectModalLiveBtn" href="https://dhanyaorg.netlify.app" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary is-hidden">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Visit Portfolio
+                        </a>
+                        <a id="projectModalInquiryBtn" href="contacts.html" class="btn btn-primary">
+                            Project Inquiry →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Certificate Lightbox Modal (Large View) -->
     <div id="certModal" class="cert-modal" role="dialog" aria-modal="true"
