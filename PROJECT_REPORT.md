@@ -65,9 +65,9 @@ TechNova/
     │   ├── logo.svg                   (866 B)    Primary geometric D monogram SVG
     │   ├── image.jpeg                 (108,882 B) Profile photograph
     │   ├── college-santhigiri.jpg     (~226 KB)  Santhigiri College of Computer Sciences campus photograph
-    │   ├── college-mac-ramapuram.jpg  (~328 KB)  MAC College (Mar Augusthinose College) campus photograph
-    │   ├── school-st-thomas-building.jpg (~275 KB) St. Thomas HSS, Pala school building photograph
-    │   ├── school-st-thomas-campus.jpg (~318 KB) St. Thomas HSS, Pala school campus photograph
+    │   ├── college-augusthinose.jpg   (~328 KB)  Mar Augusthinose College (MAC), Ramapuram campus photograph
+    │   ├── high school-ollhss.jpg     (~318 KB)  Our Lady of Lourdes H.S.S. Uzhavoor campus photograph
+    │   ├── school-ollhss.jpg          (~275 KB)  Our Lady of Lourdes H.S.S. Uzhavoor school building photograph
     │   ├── cert-nptel.jpg             (258 KB)   Authentic NPTEL & IIT Madras Business English certificate
     │   ├── cert-python.svg            (4.8 KB)   Avodha Python Programming Course certificate vector graphic
     │   ├── cert-talento.svg           (4.7 KB)   Enbridge TALENTO Program workshop certificate vector graphic

@@ -1,21 +1,6 @@
 /* =========================================
-   CONTACT PAGE — DARK NEON GLASSMORPHISM THEME
+   CONTACT PAGE — STYLES
    ========================================= */
-
-:root {
-    --contact-navy-bg: #080D1A;
-    --contact-navy-surface: #0E1626;
-    --contact-neon-blue: #3B82F6;
-    --contact-neon-cyan: #00D2FF;
-    --contact-neon-purple: #8B5CF6;
-    --contact-gradient-neon: linear-gradient(135deg, #00D2FF 0%, #3B82F6 50%, #8B5CF6 100%);
-    --contact-gradient-subtle: linear-gradient(135deg, rgba(0, 210, 255, 0.12) 0%, rgba(139, 92, 246, 0.12) 100%);
-}
-
-/* Page Canvas Theme Adaptation */
-[data-theme="dark"] body {
-    background-color: var(--contact-navy-bg);
-}
 
 .contacts-section {
     padding-top: 2rem;

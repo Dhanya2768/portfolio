@@ -951,15 +951,21 @@
         var lastCertFocusedElement = null;
 
         function openCertModal(btn) {
-            var src = btn.getAttribute('data-cert-src');
-            var title = btn.getAttribute('data-cert-title') || 'Certificate';
+            var src = btn.getAttribute('data-cert-src') || btn.getAttribute('data-photo-src');
+            if (!src) {
+                var innerImg = btn.querySelector('img');
+                if (innerImg) src = innerImg.getAttribute('src');
+            }
+            if (!src) return;
+
+            var title = btn.getAttribute('data-cert-title') || btn.getAttribute('data-photo-title') || 'Certificate';
             var issuer = btn.getAttribute('data-cert-issuer') || '';
             var year = btn.getAttribute('data-cert-year') || '';
             var type = btn.getAttribute('data-cert-type') || 'Certification';
             var desc = btn.getAttribute('data-cert-desc') || '';
 
             certModalImg.src = src;
-            certModalImg.alt = title + ' - ' + issuer;
+            certModalImg.alt = title + (issuer ? ' - ' + issuer : '');
             if (certModalTitle) certModalTitle.textContent = title;
             if (certModalBadge) certModalBadge.textContent = type;
             if (certModalIssuer) certModalIssuer.textContent = issuer;
@@ -983,8 +989,10 @@
             }
         }
 
-        document.querySelectorAll('.cert-preview-btn, .cert-view-btn').forEach(function (btn) {
-            btn.addEventListener('click', function () {
+        var certTriggers = document.querySelectorAll('.cert-preview-btn, .cert-view-btn, .cert-thumb-wrap, .cert-preview-trigger, [data-cert-src]');
+        certTriggers.forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
                 openCertModal(btn);
             });
         });
